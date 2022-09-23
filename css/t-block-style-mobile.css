@@ -1,0 +1,272 @@
+/* The header's and footer's responsive styles are located directly in their respective stylesheets — css/header.css and css/footer.css. */
+/* This stylesheet contains media queries corresponding to css/t-block-styles.css only. */
+
+
+/* ================TABLET================ */
+@media (max-width: 960px) {
+
+    .t-inner-section {
+        padding: 60px 30px;
+    }
+
+    /*Grids*/
+
+    .t-grid-box.t-grid-box-100,
+    .t-grid-box.t-grid-box-50,
+    .t-grid-box.t-grid-box-66-33,
+    .t-grid-box.t-grid-box-33-66,
+    .t-grid-box.t-grid-box-33,
+    .t-grid-box.t-grid-box-25,
+    .t-grid-box.t-grid-box-25-50-25,
+    .t-grid-box.t-grid-box-25-25-50,
+    .t-grid-box.t-grid-box-50-25-25,
+    .t-grid-box.t-grid-box-25-75,
+    .t-grid-box.t-grid-box-75-25 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Typography */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.68rem;
+    }
+
+    h3 {
+        font-size: 1.32rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5, h6 {
+        font-size: 0.875rem;
+    }
+
+    /* Flex Blocks 50 */
+    .t-flex-box .t-flex-part.t-flex-part-50 {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-50:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-50:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-50:nth-last-child(2) {
+        margin-bottom: var(--medium-offset);
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-50:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    /* Flex Blocks 66/33 */
+    .t-flex-box .t-flex-part.t-flex-part-33,
+    .t-flex-box .t-flex-part.t-flex-part-66 {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-33:nth-child(odd),
+    .t-flex-part.t-flex-part-66:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .t-flex-box .t-flex-part.t-flex-part-33:nth-child(even),
+    .t-flex-box .t-flex-part.t-flex-part-66:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .t-flex-box .t-flex-part:nth-last-child(2) {
+        margin-bottom: var(--medium-offset);
+    }
+
+    .t-flex-box .t-flex-part:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+
+    /*Headers with Icons*/
+
+    .t-header-with-icon-h .t-header-icon {
+        margin-right: 0.5em;
+    }
+
+    .t-header-with-icon-h-r .t-header-icon {
+        margin-left: 0.5em;
+    }
+
+    .t-header-with-icon-v .t-header-icon {
+        margin-bottom: 0.5em;
+    }
+
+    .t-header-with-icon-v-r .t-header-icon {
+        margin-top: 0.5em;
+    }
+
+    .t-header-icon.t-header-icon-h1 {
+        width: 50px;
+    }
+
+    .t-header-icon.t-header-icon-h2 {
+        width: 42px;
+    }
+    .t-header-icon.t-header-icon-h3 {
+        width: 30px;
+    }
+
+    .t-header-icon.t-header-icon-h4 {
+        width: 22px;
+    }
+
+    .t-header-icon.t-header-icon-h5 {
+        width: 18px;
+    }
+
+    .t-header-icon.t-header-icon-h6 {
+        width: 15px;
+    }
+
+    /* Card Post Blocks*/
+
+    .t-w-320,
+    .t-w-500,
+    .t-w-25,
+    .t-w-33,
+    .t-w-50 {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Banners */
+    .t-banner-main-picture {
+        width: auto;
+        max-height: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Vertical Tabs */
+    .t-v-tabs {
+        flex-direction: column;
+    }
+
+    .t-v-tabs .t-v-tabs-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--overall-border-radius);
+    }
+
+    .t-v-tabs .t-v-tabs-content-wrapper {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--overall-border-radius);
+    }
+
+    .t-tabs .t-tab-content {
+        padding: 0;
+    }
+
+}
+
+
+
+
+/* ================MOBILE================ */
+
+@media (max-width: 576px) {
+    .t-inner-section {
+        padding: 40px 20px;
+    }
+
+    /*Linear Post Blocks*/
+
+    .t-line-entry {
+        flex-direction: column;
+    }
+
+    .t-line-entry.t-line-entry-shifted {
+        align-items: start;
+    }
+
+    .t-line-entry .t-line-entry-thumbnail {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .t-line-entry .t-line-entry-thumbnail img {
+        max-width: 200px;
+        border-radius: var(--overall-border-radius);
+    }
+
+    .t-line-entry.t-line-entry-simple .t-line-entry-thumbnail {
+        padding-top: var(--small-offset);
+        padding-left: var(--small-offset);
+    }
+
+    .t-line-entry.t-line-entry-simple .t-line-entry-content {
+        border-radius: var(--overall-border-radius);
+        padding: var(--small-offset);
+    }
+
+    .t-line-entry.t-line-entry-shifted {
+        margin-top: 0;
+        margin-bottom: var(--medium-offset);
+    }
+
+    .t-line-entry.t-line-entry-shifted .t-line-entry-content {
+        margin-left: 0;
+        padding-left: var(--small-offset);
+        padding-top: 60px;
+    }
+
+    .t-line-entry.t-line-entry-shifted .t-line-entry-thumbnail img {
+        top: 40px;
+        left: 20px;
+    }
+
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-thumbnail {
+        text-align: center;
+    }
+
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content {
+        padding: 0;
+    }
+
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-thumbnail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content .t-line-entry-subtitle,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h1,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h2,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h3,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h4,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h5,
+    .t-line-entry.t-line-entry-no-bg .t-line-entry-content h6 {
+        text-align: center;
+    }
+
+    .t-tabs label.t-tab-bar-label {
+        margin-top: 5px;
+    }
+
+}

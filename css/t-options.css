@@ -1,0 +1,55 @@
+
+:root {
+
+    /*header*/
+    --header-height: 70px;
+
+    /*fonts*/
+    --headers-font: Noto Serif;
+    --text-font: Open Sans;
+    --text-size: 12pt;
+
+    /* colors*/
+    --success-color: #00B4D8;
+    --failure-color: #EE4266;
+    --warning-color: #ecbf58;
+    --text-color: #444444;
+    --light-text-color: #fafafa;
+    --link-light-color: #afd0db;
+    --link-dark-color: #4b7196;
+
+    --theme-main-color: #2b3956;
+    --theme-secondary-color: #afd0db;
+    --theme-accent-color: #e8464e;
+    --theme-additional-color-1: #26324c;
+
+    --theme-lighter-background: #eef5f6;
+    --theme-light-background: #e4eff0;
+    --theme-dark-background: #4b7196;
+    --theme-darker-background: #2b3956;
+
+    /* gaps, paddings, margins */
+
+    --small-offset: 20px;
+    --medium-offset: calc( var(--small-offset) * 2 );
+    --large-offset: calc( var(--small-offset) * 3 );
+    --huge-offset: calc( var(--small-offset) * 4 );
+    --section-offset: calc( var(--small-offset) * 5 );
+
+    --gap: 8px;
+    --halfgap: calc(var(--gap) * 0.5);
+    --doublegap: calc(var(--gap) * 2);
+
+    /* Content width, or t-inner-section max-width */
+    --overall-content-width: 1140px;
+
+    /* Page content vertical offset (#t-main-cointainer top margin). If not needed, set to 0px. Don't remove the px unit! */
+    --main-container-top-margin: 0px;
+
+    /* Blocks and form elements border radius */
+    --overall-border-radius: 7px;
+
+    /* box shadow*/
+    /*--overall-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);*/
+    --overall-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Classes reference</title>
+    <link rel="stylesheet" href="../css/t-options.css">
+    <link rel="stylesheet" href="../css/t-block-style.css">
+    <link rel="stylesheet" href="../css/t-block-style-mobile.css">
+    <link rel="stylesheet" href="../css/t-header.css">
+    <link rel="stylesheet" href="../css/t-footer.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        ul li {
+            margin-bottom: 1.12em;
+        }
+
+        ul.t-table-of-contents-list li {
+            margin-bottom: 0.25em;
+            font-size: 11pt;
+        }
+
+        ul.t-table-of-contents-list ul {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="t-wrapper">
+
+    <header id="t-main-header" class="t-main-header t-bg-darker is-sticky">
+        <div id="t-main-header-container">
+
+
+            <input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off">
+            <label for="toggleSideMenu" class="hamburger-icon">
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-1"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-horizontal"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-2"></div>
+            </label>
+
+
+            <section id="t-main-header-logo">
+                <a href="../index.html"><img src="../img/logo-small.png" alt=""></a>
+            </section>
+
+            
+            <section id="t-main-header-menu-container">
+
+                <section id="before-side-menu">
+                    <span>Content before main menu</span>
+                </section>
+
+                <nav id="t-main-header-menu">
+                    <ul>
+                        <li><a href="../index.html">Blocks&Elements</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <section id="after-side-menu">
+                    <span>Content after main menu</span>
+                    <section class="social-buttons">
+                        <i class="icon-linkedin"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></i><i
+                            class="icon-facebook-squared"><img class="icon-header"
+                                                               src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></i><i
+                            class="icon-vkontakte"><img class="icon-header"
+                                                        src="https://img.icons8.com/ios-glyphs/30/ffffff/vkontakte.png"/></i><i
+                            class="icon-twitter"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></i>
+                    </section>
+                </section>
+
+            </section>
+
+
+
+
+            <div id="t-main-header-right">
+                <button class="t-success"><span>Button</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="t-main-container" class="has-sticky-header">
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h2>Classes reference</h2>
+                <p class="t-v-margin-medium">Here is a list of classes that Tuicast uses. Use <kdb>Ctrl</kdb> + <kbd>F</kbd> to search for a class you need. All CSS variables, or options, mentioned below are located in <code>css/t-options.css</code></p>
+                <section class="t-table-of-contents t-padding-small t-w-320 t-bg-lighter ">
+                    <ul class="t-table-of-contents-list">
+                        <li><a href="#colors">Colors</a></li>
+                        <ul>
+                            <li><a href="#bg-colors">Background colors</a></li>
+                            <li><a href="#text-colors">Text Colors</a></li>
+                            <li><a href="#sys-bg-colors">System Background Colors</a></li>
+                        </ul>
+                        <li><a href="#v-margins">Vertical Margins</a></li>
+                        <li><a href="#paddings">Paddings</a></li>
+                        <li><a href="#borders">Borders</a></li>
+                        <li><a href="#w-limiters">Block Width Limiters</a></li>
+                        <li><a href="#text-blocks">Text Blocks</a></li>
+                        <li><a href="#box-shadows">Box Shadows</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#text-highlighting">Text Highlighting</a></li>
+                        <li><a href="#int-sep">Intervals and Separators</a></li>
+                        <ul>
+                            <li><a href="#intervals">Intervals</a></li>
+                            <li><a href="#separators">Separators</a></li>
+                        </ul>
+                    </ul>
+                </section>
+                <h3 id="colors">Colors</h3>
+                <h4 id="bg-colors">Background colors</h4>
+                <ul>
+                    <li><code>.t-bg-main</code> —  adds background of the main color defined by <code>--theme-main-color</code> option.</li>
+                    <li><code>.t-bg-secondary</code> — adds background of the secondary color defined by <code>--theme-secondary-color</code> option.</li>
+                    <li><code>.t-bg-accent</code> — adds background of the accent color defined by <code>--theme-accent-color</code> option.</li>
+                    <li><code>.t-bg-additional-1</code> — adds background of the additional color defined by <code>--theme-additional-color-1</code> option.</li>
+                    <li><code>.t-bg-light</code> — adds background of the light grey color defined by <code>--theme-light-background</code> option.</li>
+                    <li><code>.t-bg-lighter</code> — adds background of the lighter grey color defined by <code>--theme-lighter-background</code> option.</li>
+                    <li><code>.t-bg-dark</code> — adds background of the dark grey color defined by <code>--theme-dark-background</code> option.</li>
+                    <li><code>.t-bg-darker</code> — adds background of the darker grey color defined by <code>--theme-darker-background</code> option.</li>
+                </ul>
+
+                <h4 id="text-colors">Text colors</h4>
+                <ul>
+                    <li><code>.t-color-main</code> — adds main color defined by <code>--theme-main-color</code> option. </li>
+                    <li><code>.t-color-secondary</code> — adds secondary color defined by <code>--theme-secondary-color</code> option.</li>
+                    <li><code>.t-color-accent</code> — adds secondary accent defined by <code>--theme-accent-color</code> option.</li>
+                    <li><code>.t-color-additional-1</code> — adds additional color defined by <code>--theme-additional-color</code> option.</li>
+                    <li><code>.t-color-light</code> — adds light grey color defined by <code>--theme-light-background</code> option.</li>
+                    <li><code>.t-color-dark </code> — adds dark grey color defined by <code>--theme-dark-background</code> option.</li>
+                </ul>
+                <h4 id="sys-bg-colors">System background colors</h4>
+                <ul>
+                    <li><code>.t-success</code>— adds success background color defined by <code>--success-color</code> option.</li>
+                    <li><code>.t-failure</code>— adds error background color defined by <code>--failure-color</code> option.</li>
+                    <li><code>.t-warning</code>— adds warning background color defined by <code>--warning-color</code> option.</li>
+                </ul>
+                <h3 id="v-margins">Vertical margins</h3>
+                <ul>
+                    <li><code>.t-v-margin-small</code> — adds small equal vertical margins (both top and bottom) defined by <code>--small-offset</code>  option</li>
+                    <li><code>.t-v-margin-medium</code> — adds medium equal vertical margins (both top and bottom) defined by <code>--medium-offset</code>  option</li>
+                    <li><code>.t-v-margin-large</code> — adds large equal vertical margins (both top and bottom) defined by <code>--large-offset</code>  option</li>
+                    <li><code>.t-v-margin-huge</code> — adds larger equal vertical margins (both top and bottom) defined by <code>--huge-offset</code>  option</li>
+                    <li><code>.t-v-margin-section</code> — adds largest equal vertical margins (both top and bottom) designated for setting section intervals defined by <code>--section-offset</code> option. </li>
+                    <li><code>.t-top-margin-small</code> — adds a small top margin defined by <code>--small-offset</code>  option.</li>
+                    <li><code>.t-top-margin-medium</code> — adds a medium top margin defined by <code>--medium-offset</code> option.</li>
+                    <li><code>.t-top-margin-large</code> — adds a large top margin defined by <code>--large-offset</code> option.</li>
+                    <li><code>.t-top-margin-huge</code> — adds a larger top margin defined by <code>--huge-offset</code> option.</li>
+                    <li><code>.t-top-margin-section</code> — adds the largest top margin defined by <code>--section-offset</code> option.</li>
+                    <li><code>.t-bottom-margin-small</code> — adds a small bottom margin defined by <code>--small-offset</code> option</li>
+                    <li><code>.t-bottom-margin-medium</code> — adds a medium bottom margin defined by <code>--medium-offset</code> option.</li>
+                    <li><code>.t-bottom-margin-large</code> — adds a large bottom margin defined by <code>--large-offset</code> option.</li>
+                    <li><code>.t-bottom-margin-huge</code> — adds a larger bottom margin defined by <code>--huge-offset</code> option.</li>
+                    <li><code>.t-bottom-margin-section</code> — adds the largest bottom margin defined by <code>--section-offset</code> option.</li>
+                </ul>
+                <h3 id="paddings">Paddings</h3>
+                <ul>
+                    <li><code>.t-padding</code> — by default, adds medium equal paddings defined by <code>--medium-offset</code> option. Same as <code>.t-medium-padding</code></li>
+                    <li><code>.t-padding-small</code> — adds small equal paddings defined by <code>--small-offset</code> option.</li>
+                    <li><code>.t-padding-medium</code> — adds medium equal paddings defined by <code>--medium-offset</code> option.</li>
+                    <li><code>.t-padding-large</code> — adds large equal paddings defined by <code>--large-offset</code> option.</li>
+                    <li><code>.t-padding-huge</code> — adds larger equal paddings defined by <code>--huge-offset</code> option.</li>
+                    <li><code>.t-padding-section</code> — adds largest equal paddings defined by <code>--section-offset</code> option.</li>
+                    <li><code>.t-no-padding</code> — forcibly sets paddings to 0. <span class="t-warning">uses !important</span></li>
+                </ul>
+                <h3 id="borders">Borders</h3>
+                <ul>
+                    <li><code>.has-border</code> — a required class to use <code>.has-dark-border</code> or <code>.has-light-border</code> classes alongside. Used to set border-radius according to <code>--overall-border-radius</code> option. By default, also adds a dark border of a <code>--theme-dark-background</code> color.</li>
+                    <li><code>.has-dark-border</code> — adds a dark-colored border of a <code>--theme-dark-background</code> color.</li>
+                    <li><code>.has-light-border</code> — adds a light-colored border of a <code>--theme-light-background</code> color.</li>
+                    <li><code>.has-light-top-border</code> — adds a top border of a <code>--theme-light-background</code> color.</li>
+                    <li><code>.has-light-right-border</code> — adds a right border of a <code>--theme-light-background</code> color.</li>
+                    <li><code>.has-light-bottom-border</code> — adds a bottom border of a <code>--theme-light-background</code> color.</li>
+                    <li><code>.has-light-left-border</code> — adds a left border of a <code>--theme-light-background</code> color.</li>
+                    <li><code>.has-top-border</code> or <code>.has-dark-top-border</code> — adds a top border of a <code>--theme-dark-background</code> color. </li>
+                    <li><code>.has-right-border</code> or <code>.has-dark-right-border</code> — adds a right border of a <code>--theme-dark-background</code> color. </li>
+                    <li><code>.has-bottom-border</code> or <code>.has-dark-bottom-border</code> — adds a bottom border of a <code>--theme-dark-background</code> color. </li>
+                    <li><code>.has-left-border</code> or <code>.has-dark-left-border</code> — adds a left border of a <code>--theme-dark-background</code> color. </li>
+                    <li><code>.has-no-border-radius</code> — forcibly sets border radius to 0. <span class="t-warning">uses !important</span></li>
+                    <li><code>.has-no-border</code> — forcibly sets border to none. <span class="t-warning">uses !important</span></li>
+                </ul>
+                <h3 id="w-limiters">Block Width Limiters</h3>
+                <p class="text-600">Be sure to use them only for block-type elements.</p>
+                <ul>
+                    <li><code>.t-w-320</code> — sets element's <code>max-width</code> to 320px.</li>
+                    <li><code>.t-w-500</code> — sets element's <code>max-width</code> to 500px.</li>
+                    <li><code>.t-w-25</code> — sets element's <code>width</code> to 25%.</li>
+                    <li><code>.t-w-33</code> — sets element's <code>width</code> to 33%.</li>
+                    <li><code>.t-w-50</code> — sets element's <code>width</code> to 50%.</li>
+                </ul>
+                <h3 id="text-blocks">Text Blocks</h3>
+                <ul>
+                    <li><code>.text-600</code> — limits the text wrapping block's width to 600px.</li>
+                    <li><code>.block-centered</code> — centers the block with auto margins.</li>
+                    <li><code>.c600</code> — (centered text-600) is a short form of the previous two combined.</li>
+                    <li><code>.text-centered</code> — centers the text within its block container.</li>
+                    <li><code>.text-alignleft</code> — aligns the text to the left within its block container.</li>
+                    <li><code>.text-alignright</code> — aligns the text to the right within its block container.</li>
+                </ul>
+                <h3 id="box-shadows">Box Shadows</h3>
+                <ul>
+                    <li><code>.has-box-shadow</code> — adds <code>box-shadow</code> defined by <code>--overall-box-shadow</code> option.</li>
+                    <li><code>.has-no-box-shadow</code> — forcibly sets <code>box-shadow</code> to none. <span class="t-warning">uses !important</span></li>
+                </ul>
+                <h3 id="images">Images</h3>
+                <ul>
+                    <li><code>.t-img-cover</code> sets an image centered and cropped by its parent container size</li>
+                </ul>
+                <h3 id="text-highlighting">Text Highlighting</h3>
+                <ul>
+                    <li><code>.t-text-underline-fine</code> — <span class="t-text-underline-fine">dolor sit amet</span></li>
+                    <li><code>.t-text-underline-heavy</code> — <span class="t-text-underline-heavy">cumque deleniti</span></li>
+                    <li><code>.t-text-underline-regular</code> — <span class="t-text-underline-regular">laboriosam</span></li>
+                    <li><code>.t-text-underline-dotted</code> — <span class="t-text-underline-dotted">cumque fuga</span></li>
+                    <li><code>.t-text-underline-dashed</code> — <span class="t-text-underline-dashed">quam suscipit?</span></li>
+                    <li><code>.t-text-highlight-light</code> — <span class="t-text-highlight-light">exercitationem</span></li>
+                    <li><code>.t-text-highlight-dark</code> — <span class="t-text-highlight-dark">molestias</span></li>
+                    <li><code>.t-text-hint</code> — <span class="t-text-hint">Aspernatur</span></li>
+                    <li><code>.t-text-bordered</code> — <span class="t-text-bordered">Accusantium</span></li>
+                </ul>
+                <h3 id="int-sep">Intervals and Separators (Dividers)</h3>
+                <h4 id="intervals">Intervals</h4>
+                <ul>
+                    <li><code>.t-interval-small</code> — adds a small vertical interval of <code>--small-offset</code> height.</li>
+                    <li><code>.t-interval-medium</code> — adds a medium vertical interval of <code>--medium-offset</code> height.</li>
+                    <li><code>.t-interval-large</code> — adds a large vertical interval of <code>--large-offset</code> height.</li>
+                    <li><code>.t-interval-huge</code> — adds a larger vertical interval of <code>--huge-offset</code> height.</li>
+                    <li><code>.t-interval-section</code> — adds the largest vertical interval of <code>--section-offset</code> height.</li>
+                </ul>
+                <h4 id="separators">Separators</h4>
+                <ul>
+                    <li><code>.t-separator-0</code> — places a fullwidth line divider with zero vertical margins.</li>
+                    <li><code>.t-separator-small</code> — places a fullwidth line divider with small vertical margins from <code>--small-offset</code>option.</li>
+                    <li><code>.t-separator-medium</code> — places a fullwidth line divider with medium vertical margins from <code>--medium-offset</code>option.</li>
+                    <li><code>.t-separator-large</code> — places a fullwidth line divider with large vertical margins from <code>--large-offset</code>option.</li>
+                    <li><code>.t-separator-huge</code> — places a fullwidth line divider with larger vertical margins from <code>--huge-offset</code>option.</li>
+                    <li><code>.t-separator-section</code> — places a fullwidth line divider with largest vertical margins from <code>--section-offset</code>option.</li>
+                </ul>
+            </div>
+        </section>
+        
+    </section>
+
+    <footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light">
+        <div id="t-main-footer-container">
+
+            <section class="t-main-footer-top" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">4-Column Type Footer — Top Footer Section</p>
+            </section>
+            <section class="t-main-footer-middle">
+                <section class="t-main-footer-left">
+                    <h5>Address</h5>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/marker.png"-->30/20, Verkhy street,
+                        Moscow, Russia</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/phone.png"-->7 (800) 555–35–35</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/mail.png"-->noreply@reply.io</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/clock.png"-->8:00 AM – 8:00 PM</p>
+                </section>
+                <section class="t-main-footer-center1">
+                    <h5>Tags</h5>
+                    <p>
+                        <span class="t-tag">Comedy</span>
+                        <span class="t-tag">News & Politics</span>
+                        <span class="t-tag">Gaming</span>
+                        <span class="t-tag">Education</span>
+                        <span class="t-tag">Music</span>
+                        <span class="t-tag">Animals & Pets</span>
+                        <span class="t-tag">People</span>
+                        <span class="t-tag">Vlogs</span>
+                        <span class="t-tag">Science & Technology</span>
+                        <span class="t-tag">Film & Animation</span>
+                        <span class="t-tag">Entertainment</span>
+                        <span class="t-tag">Style & Fashion</span>
+                        <span class="t-tag">Sports</span>
+                        <span class="t-tag">Events</span>
+                        <span class="t-tag">HowTo & DIYs</span>
+                        <span class="t-tag">Travel</span>
+                        <span class="t-tag">Cars</span>
+                        <span class="t-tag">Activism</span>
+                    </p>
+                </section>
+                <section class="t-main-footer-center2">
+                    <h5>Categories</h5>
+                    <p>
+                    <ul class="t-top-margin-small t-footer-links">
+                        <li role="menuitem"><a href="#">Software Development</a></li>
+                        <li role="menuitem"><a href="#">Web Development</a></li>
+                        <li role="menuitem"><a href="#">Site maintainance</a></li>
+                        <li role="menuitem"><a href="#">SEO</a></li>
+                        <li role="menuitem"><a href="#">Mobile development</a></li>
+                        <li role="menuitem"><a href="#">UI/UX</a></li>
+                    </ul>
+                    </p>
+                </section>
+                <section class="t-main-footer-right">
+                    <h5>Information</h5>
+                    <p>
+                    <ul class="t-footer-links">
+                        <li role="menuitem"><a href="#">Home</a></li>
+                        <li role="menuitem"><a href="#">About</a></li>
+                        <li role="menuitem"><a href="#">Contact Information</a></li>
+                        <li role="menuitem"><a href="#">Terms of Use<br>& Legal Information</a></li>
+                        <li role="menuitem"><a href="#">Message Us</a></li>
+                        <li role="menuitem"><a href="#">Leave a Feedback</a></li>
+                    </ul>
+                    </p>
+                </section>
+            </section>
+            <section class="t-main-footer-bottom" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">Bottom Footer Section</p>
+            </section>
+
+        </div>
+    </footer>
+
+
+</section>
+
+</body>
+</html>

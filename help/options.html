@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Options</title>
+    <link rel="stylesheet" href="../css/t-options.css">
+    <link rel="stylesheet" href="../css/t-block-style.css">
+    <link rel="stylesheet" href="../css/t-block-style-mobile.css">
+    <link rel="stylesheet" href="../css/t-header.css">
+    <link rel="stylesheet" href="../css/t-footer.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        #section-grid .t-grid-part {
+            background: #666;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<section id="t-wrapper">
+
+    <header id="t-main-header" class="t-main-header t-bg-darker is-sticky">
+        <div id="t-main-header-container">
+
+
+            <input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off">
+            <label for="toggleSideMenu" class="hamburger-icon">
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-1"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-horizontal"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-2"></div>
+            </label>
+
+
+            <section id="t-main-header-logo">
+                <a href="../index.html"><img src="../img/logo-small.png" alt=""></a>
+            </section>
+
+
+            <section id="t-main-header-menu-container">
+
+                <section id="before-side-menu">
+                    <span>Content before main menu</span>
+                </section>
+
+                <nav id="t-main-header-menu">
+                    <ul>
+                        <li><a href="../index.html">Blocks&Elements</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <section id="after-side-menu">
+                    <span>Content after main menu</span>
+                    <section class="social-buttons">
+                        <i class="icon-linkedin"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></i><i
+                            class="icon-facebook-squared"><img class="icon-header"
+                                                               src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></i><i
+                            class="icon-vkontakte"><img class="icon-header"
+                                                        src="https://img.icons8.com/ios-glyphs/30/ffffff/vkontakte.png"/></i><i
+                            class="icon-twitter"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></i>
+                    </section>
+                </section>
+
+            </section>
+
+
+            <section id="t-main-header-right">
+                <button class="t-success"><span>Button</span>
+                </button>
+            </section>
+
+        </div>
+    </header>
+
+    <section id="t-main-container" class="has-sticky-header">
+
+        <section class="t-section t-bg-darker">
+            <div class="t-inner-section">
+                <h1 class="t-color-light">Options</h1>
+            </div>
+        </section>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3>Options reference</h3>
+                <p class="c600">CSS site options are stored in <code>css/t-options.css</code>. Let's have a closer look
+                    at them.</p>
+                <h4>Global</h4>
+                <p>
+                <ul>
+                    <li><code>--overall-content-width</code>: defines a width for the content, e.g. <code>.t-inner-section</code>
+                        width.
+                    </li>
+                    <li><code>--main-container-top-margin</code>: defines a page vertical offset (which is added to
+                        <code>--header-height</code> value)
+                    </li>
+                </ul>
+                </p>
+
+                <h4>Header</h4>
+                <p>
+                <ul>
+                    <li><code>--header-height</code>: defines the main header's height</code>:</li>
+                </ul>
+                </p>
+                <h4>Typography</h4>
+                <p>
+                <ul>
+                    <li><code>--headers-font</code>: defines a font used in <code>&lt;h1&gt; — &lt;h6&gt;</code>
+                        headings.
+                    </li>
+                    <li><code>--text-font</code>: defines a text font used throughout the site.</li>
+                    <li><code>--text-size</code>: defines a font size used throughout the site.</li>
+                </ul>
+                </p>
+
+
+                <h4>Gaps & Offsets</h4>
+                <p> Offsets are used for blocks margins and paddings. Gaps are used for grids.</p>
+                <p>
+                <ul>
+                    <li><code>--small-offset</code>: defines the smallest unit of offset (padding or margin).</li>
+                    <li><code>--medium-offset</code>: defines the medium unit of offset. By default, it's <code>--small-offset</code>&times;2.
+                    </li>
+                    <li><code>--large-offset</code>: defines the large unit of offset. By default, it's <code>--small-offset</code>&times;3.
+                    </li>
+                    <li><code>--huge-offset</code>: defines the larger unit of offset. By default, it's <code>--small-offset</code>&times;4.
+                    </li>
+                    <li><code>--section-offset</code>: defines the largest unit of offset, used for sections, primarily
+                        <code>.t-inner-section</code>. By default, it's <code>--small-offset</code>&times;5.
+                    </li>
+                    <li><code>--gap</code>: defines a grid gap.</li>
+                    <li><code>--halfgap</code>: defines a half gap.</li>
+                    <li><code>--doublegap</code>: defines a double gap.</li>
+                </ul>
+                </p>
+
+
+                <h4>Colors</h4>
+                <p>
+                <ul>
+                    <li><code>--theme-main-color</code>: defines a main color from the site's palette.</li>
+                    <li><code>--theme-secondary-color</code>: defines a secondary color from the site's palette.</li>
+                    <li><code>--theme-accent-color</code>: defines an accent color from the site's palette.</li>
+                    <li><code>--theme-additional-color-1</code>: defines an additional color.</li>
+                    <li><code>--text-color</code>: defines a text color throughout the site.</li>
+                    <li><code>--light-text-color</code>: defines a light color for the text against darker backgrounds.
+                    </li>
+                    <li><code>--headers-font-color</code>: defines a color for the headings.</li>
+                    <li><code>--link-dark-color</code>: defines a dark links color</li>
+                    <li><code>--link-light-color</code>: defines a light links color</li>
+                    <li><code>--theme-light-background</code>: defines a color for a light background. Used by <code>.t-bg-light</code>
+                        class.
+                    </li>
+                    <li><code>--theme-lighter-background</code>: defines a color for a lighter background. Used by
+                        <code>.t-bg-lighter</code> class.
+                    </li>
+                    <li><code>--theme-dark-background</code>: defines a color for a dark background. Used by <code>.t-bg-dark</code>
+                        class.
+                    </li>
+                    <li><code>--theme-darker-background</code>: defines a color for a darker background. Used by <code>.t-bg-darker</code>
+                        class.
+                    </li>
+                    <li><code>--success-color</code>: a color used for system success messages and form elements. Used
+                        by <code>.t-success</code> class.
+                    </li>
+                    <li><code>--failure-color</code>: a color used for system failure messages and form elements. Used
+                        by <code>.t-failure</code> class.
+                    </li>
+                    <li><code>--warning-color</code>: a color used for system warning messages and form elements. Used
+                        by <code>.t-warning</code> class.
+                    </li>
+                </ul>
+                </p>
+                <h4>Other</h4>
+                <p>
+                <ul>
+                    <li><code>--overall-border-radius</code>: defines a border-radius throughout the site.</li>
+                    <li><code>--overall-box-shadow</code>: defines a box-shadow throughout the site.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+
+        <footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light">
+            <div id="t-main-footer-container">
+
+                <section class="t-main-footer-top" style="border: 1px solid gray;">
+                    <p class="c600 text-centered t-bottom-margin-small">4-Column Type Footer — Top Footer Section</p>
+                </section>
+                <section class="t-main-footer-middle">
+                    <section class="t-main-footer-left">
+                        <h5>Address</h5>
+                        <p>30/20, Verkhy street,
+                            Moscow, Russia</p>
+                        <p>7 (800) 555–35–35</p>
+                        <p>noreply@reply.io</p>
+                        <p>8:00 AM – 8:00 PM</p>
+                    </section>
+                    <section class="t-main-footer-center1">
+                        <h5>Tags</h5>
+                        <p>
+                            <span class="t-tag">Comedy</span>
+                            <span class="t-tag">News & Politics</span>
+                            <span class="t-tag">Gaming</span>
+                            <span class="t-tag">Education</span>
+                            <span class="t-tag">Music</span>
+                            <span class="t-tag">Animals & Pets</span>
+                            <span class="t-tag">People</span>
+                            <span class="t-tag">Vlogs</span>
+                            <span class="t-tag">Science & Technology</span>
+                            <span class="t-tag">Film & Animation</span>
+                            <span class="t-tag">Entertainment</span>
+                            <span class="t-tag">Style & Fashion</span>
+                            <span class="t-tag">Sports</span>
+                            <span class="t-tag">Events</span>
+                            <span class="t-tag">HowTo & DIYs</span>
+                            <span class="t-tag">Travel</span>
+                            <span class="t-tag">Cars</span>
+                            <span class="t-tag">Activism</span>
+                        </p>
+                    </section>
+                    <section class="t-main-footer-center2">
+                        <h5>Categories</h5>
+                        <p>
+                        <ul class="t-top-margin-small t-footer-links">
+                            <li role="menuitem"><a href="#">Software Development</a></li>
+                            <li role="menuitem"><a href="#">Web Development</a></li>
+                            <li role="menuitem"><a href="#">Site maintainance</a></li>
+                            <li role="menuitem"><a href="#">SEO</a></li>
+                            <li role="menuitem"><a href="#">Mobile development</a></li>
+                            <li role="menuitem"><a href="#">UI/UX</a></li>
+                        </ul>
+                        </p>
+                    </section>
+                    <section class="t-main-footer-right">
+                        <h5>Information</h5>
+                        <p>
+                        <ul class="t-footer-links">
+                            <li role="menuitem"><a href="#">Home</a></li>
+                            <li role="menuitem"><a href="#">About</a></li>
+                            <li role="menuitem"><a href="#">Contact Information</a></li>
+                            <li role="menuitem"><a href="#">Terms of Use<br>& Legal Information</a></li>
+                            <li role="menuitem"><a href="#">Message Us</a></li>
+                            <li role="menuitem"><a href="#">Leave a Feedback</a></li>
+                        </ul>
+                        </p>
+                    </section>
+                </section>
+                <section class="t-main-footer-bottom" style="border: 1px solid gray;">
+                    <p class="c600 text-centered t-bottom-margin-small">Bottom Footer Section</p>
+                </section>
+
+            </div>
+        </footer>
+
+
+    </section>
+
+</body>
+</html>

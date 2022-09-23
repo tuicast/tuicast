@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tuicast — a HTML & CSS Framework</title>
+    <link rel="stylesheet" href="css/t-options.css">
+    <link rel="stylesheet" href="css/t-block-style.css">
+    <link rel="stylesheet" href="css/t-block-style-mobile.css">
+    <link rel="stylesheet" href="css/t-header.css">
+    <link rel="stylesheet" href="css/t-footer.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        #section-grid .t-grid-part {
+            background: var(--theme-main-color);
+            color: white;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info {
+            padding: 0 10px;
+        }
+
+        .t-caption-text {
+            margin: 0;
+            font-size: 10pt;
+            color: #777777;
+            line-height: 14pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<section id="t-wrapper">
+
+    <header id="t-main-header" class="t-main-header t-bg-darker is-sticky">
+        <div id="t-main-header-container">
+
+
+            <input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off">
+            <label for="toggleSideMenu" class="hamburger-icon">
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-1"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-horizontal"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-2"></div>
+            </label>
+
+
+            <section id="t-main-header-logo">
+                <a href="/index.html"><img src="img/logo-small.png" alt=""></a>
+            </section>
+
+
+            <section id="t-main-header-menu-container">
+
+                <section id="before-side-menu">
+                    <span>Content before main menu</span>
+                </section>
+
+                <nav id="t-main-header-menu">
+                    <ul>
+                        <li><a href="index.html">Blocks&Elements</a></li>
+                        <li><a href="help/documentation.html">Documentation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <section id="after-side-menu">
+                    <span>Content after main menu</span>
+                    <section class="social-buttons">
+                        <i class="icon-linkedin"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></i><i
+                            class="icon-facebook-squared"><img class="icon-header"
+                                                               src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></i><i
+                            class="icon-vkontakte"><img class="icon-header"
+                                                        src="https://img.icons8.com/ios-glyphs/30/ffffff/vkontakte.png"/></i><i
+                            class="icon-twitter"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></i>
+                    </section>
+                </section>
+
+            </section>
+
+
+
+
+            <div id="t-main-header-right">
+                <button class="t-success"><span>Button</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="t-main-container">
+
+
+        <section class="t-section t-bg-darker t-color-light">
+            <div class="t-inner-section">
+<h1>Tuicast</h1>
+<p>A fast and lightweight framework designed to easily build websites. No JS, just pure HTML and CSS.</p>
+            </div>
+        </section>
+
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h2>Deliver your information with diverse basic layouts</h2>
+                <h3>Basic section</h3>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span><span>Aperiam et explicabo, pariatur quo quod voluptatem voluptates. A ad cupiditate explicabo facere odio quasi totam voluptatem. Commodi consectetur, culpa delectus molestias, nemo omnis quam rem repellat similique tempore vero?</span><span>Adipisci aliquam animi beatae consequuntur, dolorem doloribus libero, magnam, maxime quidem sunt totam vero voluptas voluptatum. At cupiditate delectus dicta facilis id ipsam modi numquam odio. Ab itaque nesciunt nisi.</span>
+                </p>
+                <h4>Text-600 - an optimized line length</h4>
+                <p class="text-600"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut blanditiis corporis cum, dolor esse eum impedit iste magnam maxime minima natus nemo nostrum officia, omnis ratione recusandae repellendus sint.</span><span>Architecto asperiores assumenda at cumque deleniti dolore eligendi labore maiores obcaecati quos saepe, soluta temporibus tenetur ullam voluptas? Aspernatur assumenda blanditiis consequatur dicta fugiat libero nihil optio pariatur quidem, veniam!</span></p>
+                <h4 class="text-centered">Same but centered</h4>
+                <p class="text-600 block-centered"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut blanditiis corporis cum, dolor esse eum impedit iste magnam maxime minima natus nemo nostrum officia, omnis ratione recusandae repellendus sint.</span><span>Architecto asperiores assumenda at cumque deleniti dolore eligendi labore maiores obcaecati quos saepe, soluta temporibus tenetur ullam voluptas? Aspernatur assumenda blanditiis consequatur dicta fugiat libero nihil optio pariatur quidem, veniam!</span></p>
+            </div>
+        </section>
+
+
+
+        <section class="t-section t-bg-main t-color-light">
+            <div class="t-inner-section">
+                <h2>Flex Layout 50%</h2>
+                <div class="t-flex-box">
+
+                    <div class="t-flex-part t-flex-part-50">
+                        <h3>Text Header</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-50">
+                        <h3>Corporis</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-50">
+                        <h3>Lorem Ipsum</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-50">
+                        <h3>Dolor Sit Amet</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+                    <div class="t-flex-part t-flex-part-50 t-padding-small t-bg-darker">
+                        <h3>Background</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-50 t-padding-small has-light-border">
+                        <h3>Border</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="t-section t-bg-darker t-color-light">
+            <div class="t-inner-section">
+                <h2>Flex Layout 33%, 66%</h2>
+                <div class="t-flex-box">
+
+                    <div class="t-flex-part t-flex-part-33">
+                        <h3>Text Header 1</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-66">
+                        <h3>Text Header 2</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-66">
+                        <h3>Text Header 3</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-33">
+                        <h3>Text Header 4</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                        </p>
+                    </div>
+                    <div class="t-flex-part t-flex-part-33 t-padding-small has-background t-bg-dark">
+                        <h3>Text Header 5</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-66 t-padding-small has-border">
+                        <h3>Text Header 6</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-66 t-padding-small has-background t-bg-dark">
+                        <h3>Text Header 7</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                        </p>
+                    </div>
+
+                    <div class="t-flex-part t-flex-part-33 t-padding-small has-border">
+                        <h3>Text Header 8</h3>
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="t-section" id="section-grid">
+            <div class="t-inner-section" style="text-align: center">
+                <h2 style="text-align: left"><a href="#" class="t-color-accent">Basic Predefined Grids</a></h2>
+
+                <section class="t-grid-box t-grid-box-100 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 100%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-50 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 50%</div>
+                    <div class="t-grid-part">Grid 50%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-33 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 33.333%</div>
+                    <div class="t-grid-part">Grid 33.333%</div>
+                    <div class="t-grid-part">Grid 33.333%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-25 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-33-66 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 33.333%</div>
+                    <div class="t-grid-part">Grid 66.666%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-66-33 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 66.666%</div>
+                    <div class="t-grid-part">Grid 33.333%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-25 t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 25% (no gap)</div>
+                    <div class="t-grid-part">Grid 25% (no gap)</div>
+                    <div class="t-grid-part">Grid 25% (no gap)</div>
+                    <div class="t-grid-part">Grid 25% (no gap)</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-25-25-50 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 50%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-25-50-25 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 50%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-50-25-25 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 50%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-75-25 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 75%</div>
+                    <div class="t-grid-part">Grid 25%</div>
+                </section>
+
+                <section class="t-grid-box t-grid-box-25-75 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">Grid 25%</div>
+                    <div class="t-grid-part">Grid 75%</div>
+                </section>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="t-section t-bg-darker t-color-light">
+            <div class="t-inner-section">
+                <h2>Structure and organize voluminous information with spoilers and tabs </h2>
+                <h3><a class="link-light-color" href="help/documentation.html#spoiler">Spoiler</a></h3>
+
+                <section class="t-spoiler">
+
+                    <div class="t-spoiler-block">
+                        <input type="checkbox" id="spoiler-1" class="spoiler-hidden-checkbox">
+                        <h4><label class="t-spoiler-label" for="spoiler-1">Spoiler Header 1</label></h4>
+                        <div class="t-spoiler-text">
+                            <p>Spoiler Paragraph 1</p>
+                        </div>
+                    </div>
+
+                    <div class="t-spoiler-block">
+                        <input type="checkbox" id="spoiler-2" class="spoiler-hidden-checkbox">
+                        <h4><label class="t-spoiler-label" for="spoiler-2">Got any questions?</label></h4>
+                        <div class="t-spoiler-text">
+                            <p>A good option for FAQ's and tutorials.</p>
+                        </div>
+                    </div>
+
+                    <div class="t-spoiler-block">
+                        <input type="checkbox" id="spoiler-3" class="spoiler-hidden-checkbox">
+                        <h4><label class="t-spoiler-label" for="spoiler-3">Lorem Ipsum</label></h4>
+                        <div class="t-spoiler-text">
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ducimus eos exercitationem impedit numquam odit perspiciatis porro quas quis soluta. Amet consectetur distinctio, eligendi eos explicabo non porro quae qui?</span><span>Accusantium alias beatae consequatur consequuntur debitis dolor doloremque facere, fuga illum, incidunt laboriosam, nemo neque soluta vel vero! At dicta dolore iusto molestias optio ratione repellendus repudiandae rerum sequi soluta?</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <h3><a class="link-light-color" href="help/documentation.html#h-tabs">Horizontal Tabs</a></h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-1" checked="checked">
+                    <label for="tab-bar-1-tab-1" class="t-tab-bar-label">First Tab</label>
+                    <div class="t-tab-content">
+                        <h4>First Text Header</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-2">
+                    <label for="tab-bar-1-tab-2" class="t-tab-bar-label">Second Tab</label>
+                    <div class="t-tab-content">
+                        <h4>Second Text Header</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-3">
+                    <label for="tab-bar-1-tab-3" class="t-tab-bar-label">Third Tab</label>
+                    <div class="t-tab-content">
+                        <h4>Third Text Header</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aliquam animi aspernatur atque doloribus earum facilis iure optio quia quisquam, recusandae, rerum saepe totam ullam ut voluptatum. Odit.</p>
+                    </div>
+                </section>
+
+
+                <h3><a class="link-light-color" href="/help/documentation.html#v-tabs">Vertical Tabs</a></h3>
+                <section class="t-v-tabs">
+
+                    <section class="t-v-tabs-wrapper">
+                        <label for="t-v-tab1">Cabernet</label>
+                        <label for="t-v-tab2">Merlot</label>
+                        <label for="t-v-tab3">Sauvignon</label>
+                        <label for="t-v-tab4">Pinot</label>
+                        <label for="t-v-tab5">Chardonnay</label>
+                        <label for="t-v-tab6">Riesling</label>
+                    </section>
+
+                    <section class="t-v-tabs-content-wrapper">
+
+                        <section class="t-v-tabs-content">
+                            <input name="tab" id="t-v-tab1" type="radio" checked/>
+                            <section class="t-v-tab-content">
+                                <h2>Cabernet</h2>
+                                <p>Lorem ipsum dolor </p>
+                            </section>
+
+
+                            <input name="tab" id="t-v-tab2" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Merlot</h2>
+                                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.</p>
+                            </section>
+
+                            <input name="tab" id="t-v-tab3" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Sauvignon</h2>
+                                <p> Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </section>
+
+                            <input name="tab" id="t-v-tab4" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Pinot</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.</p>
+                            </section>
+
+                            <input name="tab" id="t-v-tab5" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Chardonnay</h2>
+                                <p> Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </section>
+
+                            <input name="tab" id="t-v-tab6" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Riesling</h2>
+                                <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.</p>
+                                <p> In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </section>
+
+            </div>
+        </section>
+
+        <section class="t-section t-bg-dark">
+            <div class="t-inner-section">
+
+                <h2 class="t-color-light">Easily put together a post page template</h2>
+                <p class="text-600 t-color-light">A number of pre-defined components such as <a class="link-light-color" href="help/documentation.html#breadcrumbs">breadcrumbs</a>, <a class="link-light-color" href="help/documentation.html#avatars">user avatars</a>,
+                    <a class="link-light-color" href="help/documentation.html#headers-icons">icon-charged headers</a>, <a class="link-light-color" href="help/documentation.html#tags">tags</a> and more are of great help.</p>
+                <section class="t-inner-section t-v-margin-medium t-bg-lighter has-light-border has-no-border-radius has-box-shadow">
+                    <nav class="t-breadcrumbs t-breadcrumbs-slash">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><span>Page Title</span></li>
+                        </ul>
+                    </nav>
+                    <h2>Post Header</h2>
+                    <section class="user-profile">
+                        <section class="t-user-avatar t-user-avatar-rounded t-user-avatar-small" style="background-image:url('img/user.jpg') "></section>
+                        <section class="user-info">
+                            <p class="t-caption-text">Mary Sue, Lead specialist</p>
+                            <p class="t-caption-text">October, 16 2022</p>
+                    </section>
+                    </section>
+                    <p class="text-600"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto deserunt dolore explicabo fugiat hic id illo repellendus sequi vitae? Earum, id nemo nesciunt possimus quisquam repellat reprehenderit totam voluptatibus!</span><span>Amet assumenda commodi, consequatur culpa distinctio ea eaque est ex impedit in ipsam necessitatibus obcaecati quia repellat repellendus sint sunt. Aliquam atque, deserunt ducimus earum eius libero minus numquam provident.</span></p>
+                    <section class="t-header-with-icon-h t-header-align-left t-top-margin-medium">
+                        <div class="t-header-icon t-header-icon-h4">
+                            <img src="img/calendar-svgrepo-com.svg">
+                        </div>
+                        <div class="t-header-icon-text">
+                            <h4 style="color:#3498db;">
+                                Row Header & Icon
+                            </h4>
+                        </div>
+                    </section>
+                    <p class="text-600"><span>Ad ea enim id illum laborum magni ratione sequi sint. Accusamus alias amet architecto, consequuntur dolore eligendi exercitationem id ipsam laudantium magnam minima molestias officia quis rem similique tempore voluptatem.</span><span>Delectus dicta eaque et expedita hic, odio qui repudiandae temporibus? At commodi, cupiditate deleniti dolorum earum excepturi hic laudantium natus neque numquam obcaecati, quae quod reiciendis, reprehenderit totam veritatis voluptates?</span></p>
+
+                    <section class="t-tags t-top-margin-small">
+                        <span class="t-tag">Comedy</span>
+                        <span class="t-tag">News & Politics</span>
+                        <span class="t-tag">Gaming</span>
+                        <span class="t-tag">Education</span>
+                        <span class="t-tag">Music</span>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+
+                <h2>Format your text whatever you like it</h2>
+                <h3 class="t-text-underline-fine">Highlight it</h3>
+                <p><span>Lorem ipsum <span class="t-text-underline-fine">dolor sit amet</span>, consectetur adipisicing elit. Architecto <span class="t-text-underline-heavy">cumque deleniti</span>  dolorem eveniet id nemo nostrum odit <span class="t-text-underline-regular">quaerat quos</span>  voluptatem! Debitis et excepturi facilis <span class="t-text-underline-regular">laboriosam</span> nihil. Id nihil reiciendis unde.</span><span>Corporis, <span class="t-text-underline-dotted">cumque fuga</span>, fugiat hic ipsam molestiae officiis quibusdam quo, ratione sequi tempore temporibus voluptas voluptatum. Aliquam deserunt distinctio exercitationem explicabo illo mollitia <span class="t-text-underline-dashed">quam suscipit?</span> Explicabo magni necessitatibus quas voluptatibus?</span><span>Accusamus alias aliquam amet culpa debitis eum, <span class="t-text-highlight-light">exercitationem</span> expedita fuga id inventore ipsum iusto maxime molestiae <span class="t-text-highlight-dark">molestias</span> nobis non nulla quia rem repellat repellendus sequi tempore unde veritatis vero vitae.</span><span>Alias aut eum nemo nobis officia possimus quia quisquam. A animi commodi consectetur dolore ducimus eligendi enim eveniet incidunt modi sit! <span class="t-text-hint">Aspernatur</span> id itaque minima odit omnis quos rem saepe.</span><span><span class="t-text-bordered">Accusantium</span> architecto blanditiis consectetur dignissimos dolorum ducimus est, exercitationem expedita facere hic id incidunt iste maiores mollitia nisi obcaecati officia officiis quisquam, quo ratione reprehenderit sapiente sunt temporibus? Commodi, quod?</span><span>Accusantium amet aspernatur at commodi consequuntur dignissimos eligendi enim esse est, nemo praesentium quasi rerum sequi similique sunt tempore vel velit, voluptatem! Ad assumenda eveniet maiores nemo omnis optio provident!</span></p>
+
+                <h3 class="t-text-underline-fine">Use fancy icon-charged lists</h3>
+                <ul class="t-list-with-icons">
+                    <li><img class="img-list-icon" src="img/icons8-success.png" alt=""> Image Icon</li>
+                    <li><img class="svg-list-icon" src="img/calendar-svgrepo-com.svg" alt=""> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem consequuntur debitis enim, exercitationem fuga, harum in iusto laboriosam maxime porro provident quae quam rem suscipit, unde vero. Necessitatibus, quis? </span></li>
+                    <li><span class="unicode-list-icon">&#10003;</span>Unicode Icon</li>
+                </ul>
+
+                <h3 class="t-text-underline-fine">Emphasize your headings with pre-headers</h3>
+
+                    <section class="pre-title">
+                        <div class="pre-title-bullet-circle"></div>
+                        <div class="pre-title-content">New gaming experience</div>
+                    </section>
+                    <h2>Text Header</h2>
+
+                    <section class="pre-title">
+                        <div class="pre-title-bullet-square"></div>
+                        <div class="pre-title-content">Our new project</div>
+                    </section>
+                    <h3>Text Header</h3>
+
+                    <section class="pre-title">
+                        <div class="pre-title-simple-bg"></div>
+                        <div class="pre-title-content t-bg-accent t-color-light">Sale!</div>
+                    </section>
+                    <h4>Text Header</h4>
+
+                <h3 class=""><span>Use dynamic tooltips</span></h3>
+                <div class="c600"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem consequuntur dicta iure iusto, magni modi nam non provident qui quis quisquam reiciendis repellendus suscipit temporibus tenetur?</p>
+                    <div class="t-tooltip t-tooltip-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h2>Layout your forms and inputs efficiently</h2>
+                <form action="">
+
+                <div class="t-flex-box t-v-margin-medium">
+
+                        <div class="t-flex-part t-flex-part-50">
+                            <label for="index-text">Your name (type=text)</label><input type="text" id="index-text">
+                            <label for="index-email">E-mail (type=e-mail)</label><input type="email" id="index-email">
+                            <label for="index-password">Password (type=password)</label><input type="password" id="index-password">
+                            <label for="index-tel">Phone number (type=phone)</label><input type="tel" id="index-tel">
+                            <label for="index-date">Date (type=date)</label><input type="date" id="index-date">
+                            <label for="index-date-local">Datetime local (type=datetime-local)</label><input type="datetime-local" id="index-date-local">
+                            <label for="index-number">Random number (type=number)</label><input type="number" id="index-number">
+                            <label for="index-checkbox">Check your mind</label><input type="checkbox" id="index-checkbox">
+                            <label for="index-radio">Radio</label><input type="radio" id="index-radio">
+                            <label for="index-select">Select a car</label>
+                            <select id="index-select" name="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat" selected>Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <label for="index-select-m">Select several cars</label>
+                            <select id="index-select-m" name="cars" size="4" multiple>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <label for="index-search">Search query (type=search)</label><input type="search" id="index-search">
+                            <label for="index-color">Set a color...</label><input type="color" id="index-color">
+                            <label for="index-list">Switch</label>
+                            <label class="t-switch">
+                                <input type="checkbox">
+                                <span class="t-switch-slider"></span>
+                            </label>
+                            <datalist id="index-list">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                            <br>
+                            <br>
+                            <input type="reset"><input type="submit">
+                        </div>
+
+                        <div class="t-flex-part t-flex-part-50">
+                            <fieldset>
+                                <legend>Fieldset (fieldset tag)</legend>
+                                <label for="fname2">First name:</label>
+                                <input type="text" id="fname2" name="fname2" value="John"><br>
+                                <label for="lname2">Last name:</label>
+                                <input type="text" id="lname2" name="lname2" value="Doe"><br><br>
+                                <input type="submit" value="Submit">
+                            </fieldset>
+
+                            <label for="index-textarea">Textarea</label><textarea name="message" rows="10" cols="30" id="index-textarea">The cat was playing in the garden.</textarea>
+                            <label for="index-file">Select a file</label> <input type="file" id="index-file">
+                            <label for="index-time">Enter your time (type=time)</label><input type="time" id="index-time">
+                            <label for="index-week">Current week (type=week)</label><input type="week" id="index-week">
+                            <label for="index-month">Current month (type=month)</label><input type="month" id="index-month">
+                            <label for="index-url">Enter your URL (type=url)</label><input type="url" id="index-url">
+                            <label for="index-button">Click me</label><input type="button" value="Do nothing" id="index-button">
+                            <label for="index-range">Range</label><input type="range" id="index-range">
+                            <label for="index-image">Image</label><input type="image" value="Image field" id="index-image">
+                            <p><button class="t-success">Success button</button></p>
+                            <p><button class="t-failure">Failure button</button></p>
+                            <p><button class="t-warning">Warning button</button></p>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <h2>Pre-designed Components</h2>
+
+
+                        <h3><a href="#">Text Block + Icon</a></h3>
+
+                        <section class="t-text-with-icon-block">
+                            <div class="t-text-with-icon-icon">
+                                <img src="img/icons8-info.png" alt="">
+                            </div>
+                            <div class="t-text-with-icon-text">
+                                <h4>Info message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                            </div>
+                        </section>
+
+                        <section class="t-text-with-icon-block has-border">
+                            <div class="t-text-with-icon-icon">
+                                <img src="img/icons8-info.png" alt="">
+                            </div>
+                            <div class="t-text-with-icon-text">
+                                <h4>Info message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                            </div>
+                        </section>
+
+                        <section class="t-text-with-icon-block t-success">
+                            <div class="t-text-with-icon-icon">
+                                <img src="img/icons8-ok-50.png" alt="">
+                            </div>
+                            <div class="t-text-with-icon-text">
+                                <h4>Success message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                            </div>
+                        </section>
+
+                        <section class="t-text-with-icon-block t-failure">
+                            <div class="t-text-with-icon-icon">
+                                <img src="img/icons8-error-50.png" alt="">
+                            </div>
+                            <div class="t-text-with-icon-text">
+                                <h4>Failure message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                            </div>
+                        </section>
+
+                        <section class="t-text-with-icon-block t-warning">
+                            <div class="t-text-with-icon-icon">
+                                <img src="img/icons8-warning-50.png" alt="">
+                            </div>
+                            <div class="t-text-with-icon-text">
+                                <h4>Warning message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                            </div>
+                        </section>
+                
+                <div class="t-separator-medium"></div>
+
+                <h3>Linear Blocks</h3>
+
+                <article class="t-line-entry t-line-entry-simple">
+                    <div class="t-line-entry-thumbnail">
+                        <picture><img src="img/picture-1.jpg" alt=""></picture>
+                    </div>
+                    <div class="t-line-entry-content">
+                        <h4 class="t-line-entry-header">
+                            Linear Block with picture #1
+                        </h4>
+                        <p class="t-line-entry-subtitle">
+                            by John Doe | September, 11
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="t-line-entry t-line-entry-shifted">
+                    <div class="t-line-entry-thumbnail">
+                        <picture><img src="img/picture-1.jpg" alt=""></picture>
+                    </div>
+                    <div class="t-line-entry-content">
+                        <h4 class="t-line-entry-header">
+                            Linear Block with picture #2
+                        </h4>
+                        <p class="t-line-entry-subtitle">
+                            by John Doe | September, 11
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="t-line-entry t-line-entry-no-bg">
+                    <div class="t-line-entry-thumbnail">
+                        <picture><img src="img/picture-1.jpg" alt=""></picture>
+                    </div>
+                    <div class="t-line-entry-content">
+                        <h4 class="t-line-entry-header">
+                            Linear Block with picture #3
+                        </h4>
+                        <p class="t-line-entry-subtitle">
+                            by John Doe | September, 11
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                        </p>
+                    </div>
+                </article>
+
+                <div class="t-separator-medium"></div>
+
+                <h3>Card Post Block</h3>
+
+                <p class="text-600">A classical solution for e-shops and blog posts.</p>
+
+                <section class="t-grid-box t-grid-box-33 has-gap t-bottom-margin-small">
+                    <div class="t-grid-part">
+
+                        <article class="t-card-entry">
+                            <div class="t-card-entry-thumbnail">
+                                <img src="img/sneakers.jpg" alt="">
+                            </div>
+                            <div class="t-card-entry-content">
+                                <div class="t-card-entry-subtitle">Sneakers</div>
+                                <h4 class="t-card-entry-header">Shop Item Header #1</h4>
+                                <div class="t-card-entry-excerpt t-top-margin-small">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus, est expedita itaque molestias nam provident quia recusandae sit ullam ut veniam vero vitae. At iste mollitia rem ullam voluptatem!</p>
+                                </div>
+                                <div class="t-card-entry-parameters">
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Made in:</span><span class="t-card-entry-parameter-value">China</span></div>
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Size:</span><span class="t-card-entry-parameter-value">45</span></div>
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Color:</span><span class="t-card-entry-parameter-value">sarcoline</span></div>
+                                </div>
+
+                                <div class="t-flex-box">
+                                    <div class="t-flex-part t-flex-part-33">
+                                        <div class="t-card-entry-price">$51.45</div>
+                                    </div>
+                                    <div class="t-flex-part t-flex-part-66">
+                                        <div class="t-card-entry-add-to-cart text-alignright"><button class="t-success">Add to cart</button></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="t-grid-part">
+
+                        <article class="t-card-entry">
+                            <div class="t-card-entry-thumbnail">
+                                <img src="img/hero.webp" alt="">
+                            </div>
+                            <div class="t-card-entry-content">
+                                <h4 class="t-card-entry-header">Blog Post Header #1</h4>
+                                <div class="t-card-entry-subtitle">by Administrator</div>
+                                <div class="t-card-entry-excerpt">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus, est expedita itaque molestias nam provident quia recusandae sit ullam ut veniam vero vitae. At iste mollitia rem ullam voluptatem!</p>
+                                </div>
+                                <div class="t-top-margin-small"><button>Read more...</button></div>
+                                <div class="t-tags">
+                                    <p>
+                                        <span class="t-tag">Comedy</span>
+                                        <span class="t-tag">News & Politics</span>
+                                        <span class="t-tag">Gaming</span>
+                                        <span class="t-tag">Education</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="t-grid-part">
+                        <article class="t-card-entry t-card-entry-full-bg has-bg" style="background: url('img/scratch-bg.webp')">
+                            <div class="t-card-entry-content t-color-light">
+                                <h4 class="t-card-entry-header t-color-light">Full Background Blog Post Header #2</h4>
+                                <div class="t-card-entry-subtitle">by Administrator</div>
+                                <div class="t-card-entry-excerpt">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus, est expedita itaque molestias nam provident quia recusandae sit ullam ut veniam vero vitae. At iste mollitia rem ullam voluptatem!</p>
+                                </div>
+                                <div class="t-top-margin-small"><button>Read more...</button></div>
+                                <div class="t-tags">
+                                    <p>
+                                        <span class="t-tag">Comedy</span>
+                                        <span class="t-tag">News & Politics</span>
+                                        <span class="t-tag">Gaming</span>
+                                        <span class="t-tag">Education</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                </section>
+
+
+                <section class="t-card-entry t-card-entry-full-bg t-padding" style="background-image: url('img/scratch-bg.webp')">
+                    <div class="t-card-entry-content">
+                        <div class="pre-title">
+                            <div class="pre-title-simple-bg"></div>
+                            <div class="pre-title-content t-bg-accent t-color-light">Starting in September</div>
+                        </div>
+                        <h3 class="t-color-light">Programming in Scratch</h3>
+                        <p class="t-color-light">Advanced-level course for our students</p>
+                        <p class="t-color-light">Card-type full-width announce</p>
+                        <button class="t-top-margin-medium">Learn more</button>
+                    </div>
+                </section>
+
+                <div class="t-separator-medium"></div>
+
+                <h3>Hero Blocks, Fullwidth Banners, CTA Blocks</h3>
+
+
+                <section class="t-banner t-padding" style="background-color: #111111; ">
+                    <div class="t-flex-box">
+                        <div class="t-flex-part t-flex-part-66">
+                            <h1 class="t-color-light">Delicious Ice Cream</h1>
+                            <h4 class="t-color-light"><span>Hero Block Example #1</span></h4>
+
+                            <p class="t-color-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci doloremque, earum error est ex expedita facilis illo itaque minus, provident sequi voluptatibus! Maxime nihil nisi porro reprehenderit sunt.
+                            </p>
+                            <button class="t-top-margin-small">Get it</button>
+                        </div>
+                        <div class="t-flex-part t-flex-part-33">
+                            <img class="t-banner-main-picture" src="img/icecream.png" alt="">
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <section class="t-banner" style=" background-image: linear-gradient(to right bottom, #e3e3e3, #e5e5e5, #ececec, #f3f3f3);">
+
+                    <div class="t-flex-box" style="align-items: center; height: 100%">
+
+                        <div class="t-flex-part t-flex-part-50">
+                            <img src="img/man.png" alt="" class="t-banner-main-picture">
+                        </div>
+
+                        <div class="t-flex-part t-flex-part-50 t-padding">
+                            <p style="font-size: 34pt; line-height: 1.2em;">We're Hiring Professionals</p>
+                            <p><span><b>Hero Block Example #2</b></span></p>
+
+                            <p><ul style="list-style: none">
+                            <li>Graphic Designer</li>
+                            <li>PHP Developer</li>
+                            <li>CMS Wordpress Developer</li>
+                        </ul>
+                            </p>
+                            <button class="t-success">Learn more</button>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                        <section class="t-tib">
+
+                            <div class="t-grid-box t-grid-box-33-66">
+                               <div class="t-grid-part t-tib-left t-no-padding">
+                                   <img class="t-tib-main-image" src="img/vase-with-tulips-table.jpg" alt="">
+                               </div>
+                               <div class="t-grid-part t-tib-right">
+                                   <div class="t-banner-subtitle">studio design</div>
+                                   <h4>Lora vase</h4>
+                                   <div class="t-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis corporis dicta, dignissimos dolor doloribus eaque expedita explicabo fugiat, in incidunt libero magni odit quo quos similique temporibus totam, ut.</div>
+                                   <div class="t-rating">★★★★★</div>
+                                   <button class="t-top-margin-medium">More info</button>
+                               </div>
+                           </div>
+
+                        </section>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </section> <!-- /t-main-cointainer -->
+
+
+
+    <footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light">
+        <div id="t-main-footer-container">
+
+            <section class="t-main-footer-top" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small" >4-Column Type Footer — Top Footer Section</p>
+            </section>
+            <section class="t-main-footer-middle">
+                <section class="t-main-footer-left">
+                    <h5>Address</h5>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/marker.png"-->30/20, Verkhy street, Moscow, Russia</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/phone.png"-->7 (800) 555–35–35</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/mail.png"-->noreply@reply.io</p>
+                    <p><!--img src="https://img.icons8.com/ios-filled/12/999999/clock.png"-->8:00 AM – 8:00 PM</p>
+                </section>
+                <section class="t-main-footer-center1">
+                    <h5>Tags</h5>
+                    <p>
+                        <span class="t-tag">Comedy</span>
+                        <span class="t-tag">News & Politics</span>
+                        <span class="t-tag">Gaming</span>
+                        <span class="t-tag">Education</span>
+                        <span class="t-tag">Music</span>
+                        <span class="t-tag">Animals & Pets</span>
+                        <span class="t-tag">People</span>
+                        <span class="t-tag">Vlogs</span>
+                        <span class="t-tag">Science & Technology</span>
+                        <span class="t-tag">Film & Animation</span>
+                        <span class="t-tag">Entertainment</span>
+                        <span class="t-tag">Style & Fashion</span>
+                        <span class="t-tag">Sports</span>
+                        <span class="t-tag">Events</span>
+                        <span class="t-tag">HowTo & DIYs</span>
+                        <span class="t-tag">Travel</span>
+                        <span class="t-tag">Cars</span>
+                        <span class="t-tag">Activism</span>
+                    </p>
+                </section>
+                <section class="t-main-footer-center2">
+                    <h5>Categories</h5>
+                    <p>
+                    <ul class="t-top-margin-small t-footer-links">
+                        <li role="menuitem"><a href="#">Software Development</a></li>
+                        <li role="menuitem"><a href="#">Web Development</a></li>
+                        <li role="menuitem"><a href="#">Site maintainance</a></li>
+                        <li role="menuitem"><a href="#">SEO</a></li>
+                        <li role="menuitem"><a href="#">Mobile development</a></li>
+                        <li role="menuitem"><a href="#">UI/UX</a></li>
+                    </ul>
+                    </p>
+                </section>
+                <section class="t-main-footer-right">
+                    <h5>Information</h5>
+                    <p>
+                    <ul class="t-footer-links">
+                        <li role="menuitem"><a href="#">Home</a></li>
+                        <li role="menuitem"><a href="#">About</a></li>
+                        <li role="menuitem"><a href="#">Contact Information</a></li>
+                        <li role="menuitem"><a href="#">Terms of Use<br>& Legal Information</a></li>
+                        <li role="menuitem"><a href="#">Message Us</a></li>
+                        <li role="menuitem"><a href="#">Leave a Feedback</a></li>
+                    </ul>
+                    </p>
+                </section>
+            </section>
+            <section class="t-main-footer-bottom" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">Bottom Footer Section</p>
+            </section>
+
+        </div>
+    </footer>
+
+</section> <!-- /t-site-wrapper -->
+</body>
+</html>

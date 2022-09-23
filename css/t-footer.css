@@ -1,0 +1,136 @@
+footer#t-main-footer #t-main-footer-container {
+    padding: var(--section-offset) 0;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+footer#t-main-footer a {
+    color: var(--link-light-color);
+}
+
+footer#t-main-footer .t-main-footer-top {
+    display: block;
+}
+footer#t-main-footer .t-main-footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer#t-main-footer .t-main-footer-bottom {
+    display: block;
+}
+
+.t-footer-links li {
+    list-style: none;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+    font-size: 11pt;
+}
+
+.footer-links ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*2 cols*/
+
+footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-left,
+footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-right {
+    flex-basis: 50%;
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: var(--medium-offset) var(--small-offset);
+}
+
+/*3 cols*/
+
+footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-left,
+footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-center,
+footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-right {
+    flex-basis: 33.333%;
+    width: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: var(--medium-offset) var(--small-offset);
+}
+
+/*4 cols*/
+
+footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-left,
+footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center1,
+footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center2,
+footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-right {
+    flex-basis: 25%;
+    width: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: var(--medium-offset) var(--small-offset);
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 960px) {
+
+    footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-right,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-center,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-right,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center1,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center2,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-right {
+        flex-basis: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    footer#t-main-footer .t-main-footer-top {
+        /*
+        display: flex;
+        flex-direction: column;
+        */
+    }
+    footer#t-main-footer .t-main-footer-middle {
+        flex-direction: column;
+    }
+
+    footer#t-main-footer .t-main-footer-bottom {
+        /*
+        display: flex;
+        flex-direction: column;
+        */
+    }
+
+    footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-2-columns .t-main-footer-middle .t-main-footer-right,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-center,
+    footer#t-main-footer.t-main-footer-3-columns .t-main-footer-middle .t-main-footer-right,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-left,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center1,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-center2,
+    footer#t-main-footer.t-main-footer-4-columns .t-main-footer-middle .t-main-footer-right {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: var(--small-offset);
+    }
+
+    footer#t-main-footer ul.t-footer-links li {
+        display: block;
+        background: rgba(0,0,0,0.27);
+        padding: 10px;
+        text-align: center;
+        font-size: larger;
+        border-radius: var(--overall-border-radius);
+    }
+
+    footer#t-main-footer ul.t-footer-links li a {
+        text-decoration: none;
+    }
+}

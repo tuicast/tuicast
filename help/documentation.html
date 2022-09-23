@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="../css/t-options.css">
+    <link rel="stylesheet" href="../css/t-block-style.css">
+    <link rel="stylesheet" href="../css/t-block-style-mobile.css">
+    <link rel="stylesheet" href="../css/t-header.css">
+    <link rel="stylesheet" href="../css/t-footer.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+
+        ul.t-table-of-contents-list li {
+            margin-bottom: 0.25em;
+            font-size: 11pt;
+        }
+
+        ul ul,
+        ul ul ul {
+            text-indent: 20px;
+        }
+
+        #section-grid .t-grid-part {
+            background: var(--theme-dark-background);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<section id="t-wrapper">
+
+    <header id="t-main-header" class="t-main-header t-bg-darker is-sticky">
+        <div id="t-main-header-container">
+
+                <input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off">
+                <label for="toggleSideMenu" class="hamburger-icon">
+                    <div class="hamburger-menu-line hamburger-menu-line-diagonal-1"></div>
+                    <div class="hamburger-menu-line hamburger-menu-line-horizontal"></div>
+                    <div class="hamburger-menu-line hamburger-menu-line-diagonal-2"></div>
+                </label>
+
+            <section id="t-main-header-logo">
+                <a href="../index.html"><img src="../img/logo-small.png" alt=""></a>
+            </section>
+
+            
+            <section id="t-main-header-menu-container">
+
+                <section id="before-side-menu">
+                    <span>Content before main menu</span>
+                </section>
+
+                <nav id="t-main-header-menu">
+                    <ul>
+                        <li><a href="../index.html">Blocks&Elements</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <section id="after-side-menu">
+                    <span>Content after main menu</span>
+                    <section class="social-buttons">
+                        <i class="icon-linkedin"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></i><i
+                            class="icon-facebook-squared"><img class="icon-header"
+                                                               src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></i><i
+                            class="icon-vkontakte"><img class="icon-header"
+                                                        src="https://img.icons8.com/ios-glyphs/30/ffffff/vkontakte.png"/></i><i
+                            class="icon-twitter"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></i>
+                    </section>
+                </section>
+
+            </section>
+
+
+
+
+            <div id="t-main-header-right">
+                <button class="t-success"><span>Button</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="t-main-container" class="has-sticky-header">
+
+        <section class="t-section t-bg-darker">
+            <div class="t-inner-section">
+                 <h1 class="t-color-light">How to use it</h1>
+            </div>
+        </section>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+
+
+                <section class="t-table-of-contents t-padding-small t-w-320 t-bg-lighter">
+                    <ul class="t-table-of-contents-list">
+                        <li><a href="#site-structure">Site structure</a></li>
+                        <ul>
+                            <li><a href="#basic">Basic webpage template</a></li>
+                            <li><a href="#css">CSS Stylesheets & Template Files</a></li>
+                            <li><a href="#header">Header</a></li>
+                            <li><a href="#footer">Footer</a></li>
+                        </ul>
+                        <li><a href="#sections">Sections</a></li>
+                        <li><a href="#layout">Layout Components</a></li>
+                        <ul>
+                            <li><a href="#borders">Flex Layout</a></li>
+                            <ul>
+                                <li><a href="#flex-50">Flex 50%</a></li>
+                                <li><a href="#flex-33">Flex 33/66%</a></li>
+                            </ul>
+                            <li><a href="#grids">Grid Layout</a></li>
+                        </ul>
+                        <li><a href="#forms">Forms, Inputs, Form Elements</a></li>
+                        <li><a href="#text-format">Text formatting and highlighting</a></li>
+                        <li><a href="#ready">Ready-to-use Components</a></li>
+                        <ul>
+                            <li><a href="#spoiler">Spoiler</a></li>
+                            <li><a href="#h-tabs">Horizontal tabs</a></li>
+                            <li><a href="#v-tabs">Vertical Tabs</a></li>
+                            <li><a href="#text-icon">Text with Icon</a></li>
+                            <li><a href="#list-icons">List with Icons</a></li>
+                            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                            <li><a href="#tags">Tags</a></li>
+                            <li><a href="#avatars">User Avatars</a></li>
+                            <li><a href="#pre-titles">Pre-titles</a></li>
+                            <li><a href="#headers-icons">Headers with Icons</a></li>
+                        </ul>
+                        <li><a href="#pre-designed">Pre-designed Post Components</a></li>
+                        <ul>
+                            <li><a href="#linear">Linear Post Blocks</a></li>
+                            <li><a href="#card">Card Post Blocks</a></li>
+                            <li><a href="#hero">Hero Banners, Fullwidth Blocks</a></li>
+                            <li><a href="#tib">Full-Height Image Banners</a></li>
+                        </ul>
+                    </ul>
+                </section>
+
+
+                <h2 class="has-bottom-border" id="classes-options">See also</h2>
+                <p class="t-top-margin-medium"><a href="options.html">Options</a> — a list of CSS variables used throughout the site</p>
+                <p><a href="classes.html">Classes</a> — a list of classes to use in Tuicast.</p>
+                <h2 class="has-bottom-border" id="site-structure">Site structure</h2>
+                <h3 id="basic">Basic webpage template</h3>
+                <p class="t-v-margin-medium c600"> The markup below is essential for every page of the website. Each page and each template file must contain the following code to get it working.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+    <span class="code-comments">/* five basic css stylesheets */</span>
+        &lt;link rel="stylesheet" href="css/t-options.css"&gt;
+        &lt;link rel="stylesheet" href="css/t-block-style.css"&gt;
+        &lt;link rel="stylesheet" href="css/t-block-style-mobile.css"&gt;
+        &lt;link rel="stylesheet" href="css/t-header.css"&gt;
+        &lt;link rel="stylesheet" href="css/t-footer.css"&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        <span class="code-comments">/* main site wrapper */</span>
+        &lt;section id="t-wrapper"&gt;
+
+            &lt;header id="t-main-header"&gt;
+            <span class="code-comments">/* header code goes there... */</span>
+            &lt;/header&gt;
+
+            &lt;section id="t-main-container"&gt;
+            <span class="code-comments">
+                ======================
+                PAGE CONTENT GOES HERE
+                ======================
+            </span>
+            &lt;/section&gt;<span class="code-comments">/* end of id="main-container" */</span>
+
+            &lt;footer id="footer-3-cols"&gt;
+            <span class="code-comments">/* footer code goes there... */</span>
+            &lt;/footer&gt;
+
+        &lt;/section&gt; <span class="code-comments">/* end of id="site-wrapper" */</span>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p class="c600 t-v-margin-medium">Schematically, the basic webpage layout looks like this:</p>
+                <p class="c600">
+                    <img src="../img/scheme.png" alt="">
+                </p>
+                <h3 id="css">CSS Stylesheets & Template Files</h3>
+                <div class="c600">
+                    <h4 id="basic-css">Basic CSS Stylesheets</h4>
+                    <p>There are five basic CSS stylesheets to be included in a project:</p>
+                    <p><code>css/options.css</code> contains root CSS variables. It's used to quickly modify colors, border radius, shadows etc throughout the site.</p>
+                    <p><code>css/t-block-style.css</code> contains styling for every block and element this framework uses. </p>
+                    <p><code>css/t-block-style-mobile.css</code> contains media queries for responsive styling. </p>
+                    <p><code>css/t-header.css</code> contains main header styling. </p>
+                    <p><code>css/t-footer.css</code> contains main footer styling. </p>
+                    <p>Each of these stylesheets needs to be included between <code>&lt;head&gt;&lt;/head&gt;</code> tags.</p>
+                    <h4>Main Header</h4>
+                    <p>Tuicast goes with built-in fully responsive header. You can locate its code in <code>html/header.html</code> file.</p> We'll see header in detail below.
+                    <h4>Main Container</h4>
+                    <p>The main container is a section between the header and footer where all the page content should be.</p>
+                    <h4>Main Footer</h4>
+                    <p>There are three pre-designed fully responsive footers placed in <code>html/footer-[number]-columns.html</code>.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h3 id="header">Site Header</h3>
+                <p class="c600 t-v-margin-medium"> Here goes the essential header code which you can locate in <code>html/header.html</code>. Please note that all CSS styling for the main header can be found in <code>css/header.css</code>. The header template, ready-to-use, rests in <code>html/</code>directory.</p>
+<pre><code>&lt;header id="t-main-header" class="t-main-header t-bg-darker is-sticky"&gt;
+    &lt;div id="t-main-header-container"&gt;
+
+        <span class="code-comments">/* Responsive mobile hamburger menu, hidden on large screens */</span>
+        &lt;input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off"&gt;
+        &lt;label for="toggleSideMenu" class="hamburger-icon"&gt;
+            &lt;div class="hamburger-menu-line hamburger-menu-line-diagonal-1"&gt;&lt;/div&gt;
+            &lt;div class="hamburger-menu-line hamburger-menu-line-horizontal"&gt;&lt;/div&gt;
+            &lt;div class="hamburger-menu-line hamburger-menu-line-diagonal-2"&gt;&lt;/div&gt;
+        &lt;/label&gt;
+
+        <span class="code-comments">/* Logo section */</span>
+        &lt;section id="t-main-header-logo"&gt;
+            &lt;img src="../img/logo-small.png" alt=""&gt;
+        &lt;/section&gt;
+
+        <span class="code-comments">/* Main menu container */</span>
+        &lt;section id="t-main-header-menu-container"&gt;
+
+            <span class="code-comments">/* Responsive section before the menu, hidden on large screens */</span>
+            &lt;section id="before-side-menu"&gt;
+                ===================================
+                MOBILE ABOVE-MENU CONTENT GOES HERE
+                ===================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* Main menu section */</span>
+            &lt;nav id="t-main-header-menu"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="../index.html"&gt;Blocks&Elements&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="documentation.html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+
+            <span class="code-comments">/* Responsive section after the menu, hidden on large screens */</span>
+            &lt;section id="after-side-menu"&gt;
+                ===================================
+                MOBILE BELOW-MENU CONTENT GOES HERE
+                ===================================
+            &lt;/section&gt;
+
+        &lt;/section&gt;
+
+        <span class="code-comments">/* Section by the right side */</span>
+        &lt;section id="t-main-header-right"&gt;
+        ============================
+        RIGHT-SIDE CONTENT GOES HERE
+        ============================
+        &lt;/section&gt;
+
+    &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+
+                <p class="c600 t-v-margin-medium">Here are the schemes of both desktop and mobile headers.</p>
+                <img class="t-wide" src="../img/header-desktop-scheme.jpg" alt="">
+                <div class="t-interval-medium"></div>
+                <img class="t-wide" src="../img/header-mobile-scheme.png" alt="">
+
+                <div class="c600 t-top-margin-medium">
+                    <p>The main header must have <code>#t-main-header</code> ID. <code>.is-sticky</code> class makes the header sticky, also shifting <code>#t-main-container</code> container by the header's height, defined by <code>--header-height</code> option in <code>css/options.css</code>.</p>
+                    <p><code>#t-main-header</code> container wraps <code>#t-main-header-container</code> block, which is a flex-positioning container for the header elements, which are as follows:</p>
+                    <ul>
+                        <li>First goes the code part for a hamburger-style button for showing a mobile menu: 
+<pre class="t-top-margin-small"><code>&lt;input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off"&gt;
+&lt;label for="toggleSideMenu" class="hamburger-icon"&gt;
+    &lt;div class="hamburger-menu-line hamburger-menu-line-diagonal-1"&gt;&lt;/div&gt;
+    &lt;div class="hamburger-menu-line hamburger-menu-line-horizontal"&gt;&lt;/div&gt;
+    &lt;div class="hamburger-menu-line hamburger-menu-line-diagonal-2"&gt;&lt;/div&gt;
+&lt;/label&gt;</code></pre>
+                        </li>
+                        <li><code>#t-main-header-logo</code> is a section to put a logo image into.</li>
+                        <li><code>#t-main-header-menu-container</code> is a section containing three blocks: <code>#before-side-menu</code> contains information to be shown above the main menu when from mobile device, <code>nav#t-main-header-menu</code> is a place to put your menu, <code>#after-side-menu</code> is for any content beneath the main menu. Both <code>#before-side-menu</code> and <code>#after-side-menu</code> are by default hidden on large screens. </li>
+                        <li><code>#t-main-header-right</code>is the last, right-side section.</li>
+                    </ul>
+                    <p>The mobile menu is 250px width, absolute-positioned, sliding from the left side.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="footer">Site Footer</h3>
+
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-24" id="tab-bar-24-tab-1" checked="checked">
+                    <label for="tab-bar-24-tab-1" class="t-tab-bar-label">2-Column Footer Source Code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light"&gt;
+    &lt;div id="t-main-footer-container"&gt;
+
+        <span class="code-comments">/* footer top section */</span>
+        &lt;section class="t-main-footer-top" &gt;
+            ==========================
+            FOOTER TOP SECTION CONTENT
+            ==========================
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer middle section */</span>
+        &lt;section class="t-main-footer-middle"&gt;
+
+            <span class="code-comments">/* middle left section */</span>
+            &lt;section class="t-main-footer-left"&gt;
+                ==================================
+                FOOTER MIDDLE LEFT SECTION CONTENT
+                ==================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle right section */</span>
+            &lt;section class="t-main-footer-right"&gt;
+                ===================================
+                FOOTER MIDDLE RIGHT SECTION CONTENT
+                ===================================
+            &lt;/section&gt;
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer bottom section */</span>
+        &lt;section class="t-main-footer-bottom"&gt;
+            =============================
+            FOOTER BOTTOM SECTION CONTENT
+            =============================
+        &lt;/section&gt;
+
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-24" id="tab-bar-24-tab-2">
+                    <label for="tab-bar-24-tab-2" class="t-tab-bar-label">3-Column Footer Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light"&gt;
+    &lt;div id="t-main-footer-container"&gt;
+
+        <span class="code-comments">/* footer top section */</span>
+        &lt;section class="t-main-footer-top" &gt;
+            ==========================
+            FOOTER TOP SECTION CONTENT
+            ==========================
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer middle section */</span>
+        &lt;section class="t-main-footer-middle"&gt;
+
+            <span class="code-comments">/* middle left section */</span>
+            &lt;section class="t-main-footer-left"&gt;
+                ==================================
+                FOOTER MIDDLE LEFT SECTION CONTENT
+                ==================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle center section */</span>
+            &lt;section class="t-main-footer-center"&gt;
+                ====================================
+                FOOTER MIDDLE CENTER SECTION CONTENT
+                ====================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle right section */</span>
+            &lt;section class="t-main-footer-right"&gt;
+                ===================================
+                FOOTER MIDDLE RIGHT SECTION CONTENT
+                ===================================
+            &lt;/section&gt;
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer bottom section */</span>
+        &lt;section class="t-main-footer-bottom"&gt;
+            =============================
+            FOOTER BOTTOM SECTION CONTENT
+            =============================
+        &lt;/section&gt;
+
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+                    </div>
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-24" id="tab-bar-24-tab-3">
+                    <label for="tab-bar-24-tab-3" class="t-tab-bar-label">4-Column Footer Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light"&gt;
+    &lt;div id="t-main-footer-container"&gt;
+
+        <span class="code-comments">/* footer top section */</span>
+        &lt;section class="t-main-footer-top" &gt;
+            ==========================
+            FOOTER TOP SECTION CONTENT
+            ==========================
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer middle section */</span>
+        &lt;section class="t-main-footer-middle"&gt;
+
+            <span class="code-comments">/* middle left section */</span>
+            &lt;section class="t-main-footer-left"&gt;
+                ==================================
+                FOOTER MIDDLE LEFT SECTION CONTENT
+                ==================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle first center section */</span>
+            &lt;section class="t-main-footer-center1"&gt;
+                ======================================
+                FOOTER MIDDLE CENTER 1 SECTION CONTENT
+                ======================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle second center section */</span>
+            &lt;section class="t-main-footer-center2"&gt;
+                ======================================
+                FOOTER MIDDLE CENTER 2 SECTION CONTENT
+                ======================================
+            &lt;/section&gt;
+
+            <span class="code-comments">/* middle right section */</span>
+            &lt;section class="t-main-footer-right"&gt;
+                ===================================
+                FOOTER MIDDLE RIGHT SECTION CONTENT
+                ===================================
+            &lt;/section&gt;
+        &lt;/section&gt;
+
+        <span class="code-comments">/* footer bottom section */</span>
+        &lt;section class="t-main-footer-bottom"&gt;
+            =============================
+            FOOTER BOTTOM SECTION CONTENT
+            =============================
+        &lt;/section&gt;
+
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+                    </div>
+
+                </section>
+
+
+                <div class="c600">
+                    <p>Tuicast features three footer variations depending upon your needs, which are: 2-column, 3-column, 4-column types. All the necessary CSS styling is located in <code>css/footer.css</code>. In addition, you'll find the templates for each type of footer in <code>html/</code>directory.</p>
+                    <p>A footer is declared with <code>&lt;footer id="t-main-footer" class="t-main-footer-(number)-columns"&gt;...&lt;/footer&gt;</code>, where the necessary class is one of these:</p>
+                    <ul>
+                        <li><code>.t-main-footer-2-columns</code> for a 2-column footer,</li>
+                        <li><code>.t-main-footer-3-columns</code> for a 3-column footer,</li>
+                        <li><code>.t-main-footer-4-columns</code> for a 4-column footer.</li>
+                    </ul>
+                    <p>Inside the <code>&lt;footer&gt;...&lt;/footer&gt;</code>there's a container with <code>#t-main-footer-container</code> ID. All the content goes within this block.</p>
+                    <p>Every type of footer consists of three horizontal sections:</p>
+                    <ul>
+                        <li><code>.t-main-footer-top</code> is a top section,</li>
+                        <li><code>.t-main-footer-middle</code> is a middle section,</li>
+                        <li><code>.t-main-footer-bottom</code> is a bottom one.</li>
+                    </ul>
+                    <p>Both <code>.t-main-footer-top</code> and <code>.t-main-footer-bottom</code> are displayed as <code>display:block;</code>. If you need to change them to <code>flex</code>, you need to uncomment the necessary rules in <code>css/footer.css</code>. The middle <code>.t-main-footer-middle</code> section is, otherwise, a flex container for the footer columns. The number of these columns vary in accordance with the chosen<code>.t-main-footer-(number)-columns</code> style.</p>
+                    <h4>Footer Middle Section Columns Classes</h4>
+
+                    <p>2-column footer uses <code>.t-main-footer-2-columns</code> class for the footer and <code>.t-main-footer-left</code> and <code>.t-main-footer-right</code> classes for the columns inside the middle <code>.t-main-footer-middle</code> section. </p>
+
+                    <p>3-column footer uses <code>.t-main-footer-3-columns</code> class for the footer and <code>.t-main-footer-left</code>, <code>.t-main-footer-center</code> and <code>.t-main-footer-right</code> classes for the columns inside the middle <code>.t-main-footer-middle</code> section. </p>
+                    <p>4-column footer uses <code>.t-main-footer-4-columns</code> class for the footer and <code>.t-main-footer-left</code>, <code>.t-main-footer-center1</code>, <code>.t-main-footer-center2</code> and <code>.t-main-footer-right</code> classes for the columns inside the middle <code>.t-main-footer-middle</code> section. </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section ">
+                <h2 class="has-bottom-border" id="sections">Sections</h2>
+                <h3 id="basic-section">Basic section (t-section)</h3>
+                <p class="c600 t-v-margin-medium">The basic section code:</p>
+                <section class="t-bg-dark">
+<pre><code>&lt;section class="t-section"&gt;
+    &lt;div class="t-inner-section"&gt;
+        ======================
+        CONTENT GOES HERE
+        ======================
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </section>
+            </div>
+        </section>
+
+        <section class="t-section t-bg-darker">
+            <div class="t-inner-section text-centered t-bg-dark">
+                <p class="t-color-light">Example of <code class="t-color-dark">.t-section</code> (darker color)<br>
+                and <code class="t-color-dark">.t-inner-section</code> (lighter color)</p>
+                <p class="t-color-light">The content goes inside <code class="t-color-dark">.t-inner-section</code> block.</p>
+            </div>
+        </section>
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <p class="c600"><code>.t-section</code> goes fullwidth, except when <code>.site-wrapper</code> limits it. <br><code>.t-inner-section</code> limits the content width to the <code>--overall-content-width</code> option value in <code>css/options.css</code>, so that we have a nice option to build blocks with a content inside them.</p>
+                <p class="c600">It is strongly encouraged to wrap every part of your content in <code>.t-section</code> and <code>.t-inner-section</code>s.</p>
+            </div>
+        </section>
+
+
+
+
+        <div class="t-separator-0"></div>
+
+
+
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+        <h2 id="layout" class="has-bottom-border">Layout Components</h2>
+                <h3 id="flex">Flex Layout</h3>
+                <p class="c600">T-code features two flex layouts: 50%/50% and 33.333%/66.666%. If you need more complex layouts, it is recommended to use Grid layouts (below) instead or design your own one.</p>
+
+                        <h4 id="flex-50" class="t-top-margin-large">Flex Layout: 50%</h4>
+
+                        <section class="t-tabs">
+
+                            <input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-1" checked="checked">
+                            <label for="tab-bar-1-tab-1" class="t-tab-bar-label">Demo</label>
+                            <div class="t-tab-content">
+
+                                <div class="t-flex-box">
+
+                                    <div class="t-flex-part t-flex-part-50">
+                                        <h4>Text Header</h4>
+                                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="t-flex-part t-flex-part-50">
+                                        <h4>Corporis</h4>
+                                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="t-flex-part t-flex-part-50 t-padding t-bg-darker t-color-light">
+                                        <h4>Background</h4>
+                                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="t-flex-part t-flex-part-50 has-border t-padding">
+                                        <h4>Border</h4>
+                                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-2">
+                            <label for="tab-bar-1-tab-2" class="t-tab-bar-label">Source code</label>
+                            <div class="t-tab-content">
+
+                                    <pre>
+<code>
+&lt;section class="t-section"&gt;
+    &lt;div class="t-inner-section"&gt;
+
+        &lt;div class="t-flex-box"&gt;
+
+            &lt;div class="t-flex-part t-flex-part-50"&gt;
+                ======================
+                CONTENT GOES HERE
+                ======================
+            &lt;/div&gt;
+
+            &lt;div class="t-flex-part t-flex-part-50"&gt;
+                ======================
+                CONTENT GOES HERE
+                ======================
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/section&gt;
+                                </code>
+                                    </pre>
+
+                            </div>
+                        </section>
+
+                        <p class="c600 t-v-margin-medium">Flex layout is wrapped in <code>.t-flex-box</code> class. Each flex part is wrapped in <code>t-flex-part</code> class. <code> .t-flex-box-50</code> class indicates that it's 50/50 layout. Adding <code>.has-background</code> or <code>.has-border</code> class adds paddings so that it's possible to add a background or border to a flex element. Please note that both <code>.has-background</code> and <code>.has-border</code> modify the <code>.t-flex-part</code> class.</p>
+
+
+
+
+                <h4 id="flex-33" class="t-top-margin-large">Flex Layout 66%/33%, 33%/66%</h4>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-2" id="tab-bar-2-tab-1" checked="checked">
+                    <label for="tab-bar-2-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+
+                        <div class="t-flex-box">
+
+                            <div class="t-flex-part t-flex-part-33">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                                </p>
+                            </div>
+
+                            <div class="t-flex-part t-flex-part-66">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                </p>
+                            </div>
+
+                            <div class="t-flex-part t-flex-part-66">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                </p>
+                            </div>
+
+                            <div class="t-flex-part t-flex-part-33">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                                </p>
+                            </div>
+                            <div class="t-flex-part t-flex-part-33 has-background t-bg-dark t-color-light t-padding-small">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore!</span>
+                                </p>
+                            </div>
+
+                            <div class="t-flex-part t-flex-part-66 has-border t-padding-small">
+                                <h4>Text Header</h4>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio excepturi exercitationem, facilis iure quibusdam quos tempore! Expedita, nemo, sit! Aperiam nam provident ratione recusandae soluta ut vel voluptatem? Similique.</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-2" id="tab-bar-2-tab-2">
+                    <label for="tab-bar-2-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+
+<pre><code>&lt;section class="t-section"&gt;
+    &lt;div class="t-inner-section"&gt;
+
+        &lt;div class="t-flex-box"&gt;
+
+            &lt;div class="t-flex-part t-flex-part-66"&gt;
+                ======================
+                CONTENT GOES HERE - 1
+                ======================
+            &lt;/div&gt;
+
+            &lt;div class="t-flex-part t-flex-part-33"&gt;
+                ======================
+                CONTENT GOES HERE - 2
+                ======================
+            &lt;/div&gt;
+
+            &lt;div class="t-flex-part t-flex-part-66"&gt;
+                ======================
+                CONTENT GOES HERE - 3
+                ======================
+            &lt;/div&gt;
+
+            &lt;div class="t-flex-part t-flex-part-33"&gt;
+                ======================
+                CONTENT GOES HERE - 4
+                ======================
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+                    </div>
+                </section>
+
+
+                <p class="c600 t-top-margin-medium">Basically the same. Flex layout is wrapped in <code>.t-flex-box</code> class. Each flex part is wrapped in <code>t-flex-part</code> class. <code> .t-flex-box-66</code> and <code> .t-flex-box-33</code> classes indicate that it's 66/33 layout. Adding <code>.has-background</code> or <code>.has-border</code> class adds paddings so that it's possible to add background or border to a flex element. Please note that both <code>.has-background</code> and <code>.has-border</code> modify the <code>.t-flex-part</code> class.</p>
+                <p class="c600">An important note: please make sure you're using <code> .t-flex-box-66</code> and <code> .t-flex-box-33</code> flex element in a single row together. The order may vary, but a row must contain a single <code> .t-flex-box-33</code> element and a single <code> .t-flex-box-66</code> element. You should avoid using the two same elements in a single row. </p>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section" id="section-grid">
+            <div class="t-inner-section">
+                <h2 id="grids">Grids</h2>
+                <p class="c600">There are several pre-defined grids — from 100% <code>(1fr)</code> to 25% <code>(1fr 1fr 1fr 1fr)</code></p>
+
+
+
+                <div class="t-tabs t-v-margin-medium">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-3" id="tab-bar-3-tab-1" checked="checked">
+                    <label for="tab-bar-3-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-grid-box t-grid-box-100 has-gap">
+                            <div class="t-grid-part">100%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-50 has-gap t-v-margin-small">
+                            <div class="t-grid-part">50%</div>
+                            <div class="t-grid-part">50%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-33 has-gap t-v-margin-small">
+                            <div class="t-grid-part">33.333%</div>
+                            <div class="t-grid-part">33.333%</div>
+                            <div class="t-grid-part">33.333%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-25 has-gap t-v-margin-small">
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">25%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-33-66 has-gap t-v-margin-small">
+                            <div class="t-grid-part">33.333%</div>
+                            <div class="t-grid-part">66.666%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-66-33 has-gap t-v-margin-small">
+                            <div class="t-grid-part">66.666%</div>
+                            <div class="t-grid-part">33.333%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-25 t-v-margin-small">
+                            <div class="t-grid-part">25% (no gap)</div>
+                            <div class="t-grid-part">25% (no gap)</div>
+                            <div class="t-grid-part">25% (no gap)</div>
+                            <div class="t-grid-part">25% (no gap)</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-25-25-50 has-gap t-v-margin-small">
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">50%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-25-50-25 has-gap t-v-margin-small">
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">50%</div>
+                            <div class="t-grid-part">25%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-50-25-25 has-gap t-v-margin-small">
+                            <div class="t-grid-part">50%</div>
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">25%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-75-25 has-gap t-v-margin-small">
+                            <div class="t-grid-part">75%</div>
+                            <div class="t-grid-part">25%</div>
+                        </section>
+
+                        <section class="t-grid-box t-grid-box-25-75 has-gap t-v-margin-small">
+                            <div class="t-grid-part">25%</div>
+                            <div class="t-grid-part">75%</div>
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-3" id="tab-bar-3-tab-2">
+                    <label for="tab-bar-3-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;section class="t-grid-box t-grid-box-100 has-gap"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 100%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-50 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 50%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 50%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-33 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 33.333%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 33.333%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 33.333%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-25 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-33-66 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 33.333%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 66.666%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-66-33 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 66.666%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 33.333%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-25 t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25% (no gap)&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25% (no gap)&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25% (no gap)&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25% (no gap)&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-25-25-50 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 50%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-25-50-25 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 50%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-50-25-25 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 50%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-75-25 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 75%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="t-grid-box t-grid-box-25-75 has-gap t-v-margin-small"&gt;
+    &lt;div class="t-grid-part"&gt;Grid 25%&lt;/div&gt;
+    &lt;div class="t-grid-part"&gt;Grid 75%&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                </div>
+
+                <h4>Grid Classes</h4>
+                <p>Each grid should have a <code>.t-grid-box</code> class. The second class determines the type of a grid used. The predefined classes are those:
+                <ul class="t-v-margin-small">
+                    <li><code>.t-grid-box-100</code> — a 100% grid template (<code>grid-template-columns: 1fr;</code>)</li>
+                    <li><code>.t-grid-box-50</code> — a 50% grid template (<code>grid-template-columns: 1fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-33</code> — a 33% grid template (<code>grid-template-columns: 1fr 1fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-25</code> — a 25% grid template (<code>grid-template-columns: 1fr 1fr 1fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-33-66</code> — a 33% + 66% grid template (<code>grid-template-columns: 1fr 2fr;</code>)</li>
+                    <li><code>.t-grid-box-66-33</code> — a 66% + 33% grid template (<code>grid-template-columns: 2fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-25-25-50</code> — a 25% + 25% + 50% grid template (<code>grid-template-columns: 1fr 1fr 2fr;</code>)</li>
+                    <li><code>.t-grid-box-25-50-25</code> — a 25% + 50% + 25% grid template (<code>grid-template-columns: 1fr 2fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-50-25-25</code> — a 50% + 25% + 25% grid template (<code>grid-template-columns: 2fr 1fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-75-25</code> — a 75% + 25% grid template (<code>grid-template-columns: 3fr 1fr;</code>)</li>
+                    <li><code>.t-grid-box-25-75</code> — a 25% + 75% grid template (<code>grid-template-columns: 1fr 3fr;</code>)</li>
+                </ul>
+                </p>
+                <p>By default, grids come with no gap. To add the gap, add <code>.has-gap</code> class to the grid. The gap value can be changed in <code>--gap</code> option from <code>css/options.css</code>stylesheet. Please note that a grid with no gap doesn't comply with <code>--overall-border-radius</code> option from <code>css/options.css</code>.</p>
+                <p>Each grid part should have a <code>.t-grid-part</code> class.</p>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h2 id="ready" class="has-bottom-border">Ready-to-use Blocks</h2>
+                <p class="c600 t-v-margin-medium">The true power of Tuicast reveals when it comes down to pre-defined website elements you can use straight from the box.</p>
+                <h3 id="spoiler">Spoiler</h3>
+                <p class="c600 t-v-margin-medium">A smooth multiple-choice accordion.</p>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-4" id="tab-bar-4-tab-1" checked="checked">
+                    <label for="tab-bar-4-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-spoiler">
+
+                            <div class="t-spoiler-block">
+                                <input type="checkbox" id="spoiler-1" class="spoiler-hidden-checkbox">
+                                <h4><label class="t-spoiler-label" for="spoiler-1">Spoiler Header 1</label></h4>
+                                <div class="t-spoiler-text">
+                                    <p>Spoiler Paragraph 1</p>
+                                </div>
+                            </div>
+
+                            <div class="t-spoiler-block">
+                                <input type="checkbox" id="spoiler-2" class="spoiler-hidden-checkbox">
+                                <h4><label class="t-spoiler-label" for="spoiler-2">Got any questions?</label></h4>
+                                <div class="t-spoiler-text">
+                                    <p>A good option for FAQ's and tutorials.</p>
+                                </div>
+                            </div>
+
+                            <div class="t-spoiler-block">
+                                <input type="checkbox" id="spoiler-3" class="spoiler-hidden-checkbox">
+                                <h4><label class="t-spoiler-label" for="spoiler-3">Lorem Ipsum</label></h4>
+                                <div class="t-spoiler-text">
+                                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ducimus eos exercitationem impedit numquam odit perspiciatis porro quas quis soluta. Amet consectetur distinctio, eligendi eos explicabo non porro quae qui?</span><span>Accusantium alias beatae consequatur consequuntur debitis dolor doloremque facere, fuga illum, incidunt laboriosam, nemo neque soluta vel vero! At dicta dolore iusto molestias optio ratione repellendus repudiandae rerum sequi soluta?</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-4" id="tab-bar-4-tab-2">
+                    <label for="tab-bar-4-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+                        <pre>
+                            <code>
+&lt;section class="t-spoiler"&gt;
+
+    &lt;div class="t-spoiler-block"&gt;
+        &lt;input type="checkbox" id="spoiler-1" class="spoiler-hidden-checkbox"&gt;
+        &lt;h4&gt;&lt;label class="t-spoiler-label" for="spoiler-1"&gt;Spoiler Header 1&lt;/label&gt;&lt;/h4&gt;
+        &lt;div class="t-spoiler-text"&gt;
+            &lt;p&gt;Spoiler Paragraph 1&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="t-spoiler-block"&gt;
+        &lt;input type="checkbox" id="spoiler-2" class="spoiler-hidden-checkbox"&gt;
+        &lt;h4&gt;&lt;label class="t-spoiler-label" for="spoiler-2"&gt;Got any questions?&lt;/label&gt;&lt;/h4&gt;
+        &lt;div class="t-spoiler-text"&gt;
+            &lt;p&gt;A good option for FAQ's and tutorials.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="t-spoiler-block"&gt;
+        &lt;input type="checkbox" id="spoiler-3" class="spoiler-hidden-checkbox"&gt;
+        &lt;h4&gt;&lt;label class="t-spoiler-label" for="spoiler-3"&gt;Lorem Ipsum&lt;/label&gt;&lt;/h4&gt;
+        &lt;div class="t-spoiler-text"&gt;
+            &lt;p&gt;&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ad ducimus eos exercitationem impedit numquam odit perspiciatis porro quas quis soluta.
+                        Amet consectetur distinctio, eligendi eos explicabo non porro quae qui?&lt;/span&gt;&lt;span&gt;
+                        Accusantium alias beatae consequatur consequuntur debitis dolor doloremque facere, fuga illum,
+                        incidunt laboriosam, nemo neque soluta vel vero! At dicta dolore iusto molestias optio ratione
+                        repellendus repudiandae rerum sequi soluta?&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                </section>
+
+
+                <p class="c600 t-top-margin-medium">A spoiler is wrapped in <code>.t-spoiler</code> class. Every expandable spoiler block has a <code>.t-spoiler-block</code> class. Inside, we first put a hidden checkbox with a <code>.spoiler-hidden-checkbox</code> class and a unique ID. Then goes the header: be sure to use <code>&lt;h4&gt;&lt;/h4&gt;</code> tag. Inside the header, put a label to the prior checkbox. An expandable part below the header should be wrapped in <code>.t-spoiler-text</code> block.</p>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <h3 id="h-tabs">Horizontal tabs</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-5" id="tab-bar-5-tab-1" checked="checked">
+                    <label for="tab-bar-5-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        You're looking at it right now!
+                    </div>
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-5" id="tab-bar-5-tab-2">
+                    <label for="tab-bar-5-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+                        <pre>
+                            <code>
+&lt;section class="t-tabs"&gt;
+
+    <span class="code-comments">/* First tab and its content */</span>
+    &lt;input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-1" checked="checked"&gt;
+    &lt;label for="tab-bar-1-tab-1" class="t-tab-bar-label"&gt;First Tab&lt;/label&gt;
+    &lt;div class="t-tab-content"&gt;
+        ======================
+        CONTENT GOES HERE - 1
+        ======================
+    &lt;/div&gt;
+
+    <span class="code-comments">/* Second tab and its content */</span>
+    &lt;input type="radio" class="tabs-hidden-radio" name="tab-bar-1" id="tab-bar-1-tab-2"&gt;
+    &lt;label for="tab-bar-1-tab-2" class="t-tab-bar-label"&gt;Second tab&lt;/label&gt;
+    &lt;div class="t-tab-content"&gt;
+        ======================
+        CONTENT GOES HERE - 2
+        ======================
+    &lt;/div&gt;
+
+&lt;/section&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                </section>
+
+                <div class="c600 t-top-margin-medium">
+                    <p>The tabs are wrapped in <code>.t-tabs</code> block. Each tab has a hidden radio button with <code>.tabs-hidden-radio</code> class followed by its <code>&lt;label&gt;&lt;/label&gt;</code> with <code>.t-tab-bar-label</code> class.</p>
+                    <p>Please note, each particular tab group must share the same <code>name</code> attribute for its radio buttons. Also, all radio buttons must have unique IDs, to which their respective  <code>&lt;label&gt;&lt;/label&gt;</code>'s are assigned to.</p>
+                    <p>If you need a header inside a tab content block, using <code>&lt;h4&gt;&lt;/h4&gt;</code> compensates for a top margin: <code>.t-tabs .t-tab-content h4:first-child {margin-top: 0;}</code></p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="v-tabs">Vertical Tabs</h3>
+
+
+                <section class="t-v-tabs">
+
+                    <section class="t-v-tabs-wrapper">
+                        <label for="t-v-tab1">Demo</label>
+                        <label for="t-v-tab2">Source code</label>
+                    </section>
+
+                    <section class="t-v-tabs-content-wrapper">
+
+                        <section class="t-v-tabs-content">
+                            <input name="tab" id="t-v-tab1" type="radio" checked/>
+                            <section class="t-v-tab-content">
+                                <h2>Demo</h2>
+                                <p>You're looking at it right now! </p>
+                            </section>
+
+
+                            <input name="tab" id="t-v-tab2" type="radio"/>
+                            <section class="t-v-tab-content">
+                                <h2>Source code</h2>
+<pre class="t-top-margin-small"><code>
+&lt;section class="t-v-tabs"&gt;
+
+    <span class="code-comments">/* Labels (left column) */</span>
+    &lt;section class="t-v-tabs-wrapper"&gt;
+        &lt;label for="t-v-tab1"&gt;Cabernet&lt;/label&gt;
+        &lt;label for="t-v-tab2"&gt;Merlot&lt;/label&gt;
+    &lt;/section&gt;
+
+    <span class="code-comments">/* Content (right column) */</span>
+    &lt;section class="t-v-tabs-content-wrapper"&gt;
+        &lt;section class="t-v-tabs-content"&gt;
+            
+            &lt;input name="tab" id="t-v-tab1" type="radio" checked/&gt;
+            &lt;section class="t-v-tab-content"&gt;
+                &lt;h2&gt;Cabernet&lt;/h2&gt;
+                &lt;p&gt;
+                    ======================
+                     CONTENT 1 GOES HERE
+                    ======================
+                &lt;/p&gt;
+            &lt;/section&gt;
+        
+            &lt;input name="tab" id="t-v-tab2" type="radio"/&gt;
+            &lt;section class="t-v-tab-content"&gt;
+                &lt;h2&gt;Merlot&lt;/h2&gt;
+                &lt;p&gt;                 
+                    ======================
+                     CONTENT 2 GOES HERE
+                    ======================
+                &lt;/p&gt;
+            &lt;/section&gt;
+            
+        &lt;/section&gt; <span class="code-comments">/.t-v-tabs-content</span>
+    &lt;/section&gt; <span class="code-comments">/.t-v-tabs-content-wrapper</span>
+
+&lt;/section&gt; <span class="code-comments">/.t-v-tabs</span></code></pre>
+                            </section>
+
+                        </section>
+                    </section>
+
+                </section>
+
+                <div class="c600 t-top-margin-medium">
+                <p>The vertical tabs are wrapped in <code>.t-v-tabs</code> class block. Next, we have two <code>flex</code>-positioned sections: <code>&lt;section class="t-v-tabs-wrapper"&gt;...&lt;/section&gt;</code> and <code>&lt;section class="t-v-tabs-content-wrapper"&gt;&lt;/section&gt;</code></p>
+                <p><code>&lt;section class="t-v-tabs-wrapper"&gt;...&lt;/section&gt;</code> by the left side contains labels for hidden radio buttons in the right-side section. These are our tab labels.</p>
+                <p><code>&lt;section class="t-v-tabs-content-wrapper"&gt;...&lt;/section&gt;</code> by the right side wraps up <code>&lt;section class="t-v-tabs-content"&gt;...&lt;/section&gt;</code> block, which contains a respective number of <code>.t-v-tabs-content</code> sections. Each of those contains hidden radio buttons with unique IDs which must correspond to their labels from the left section. Also don't forget that each particular vertical tabs group must share the same <code>name</code> attribute. Each tab content block beneath its radio button should have the <code>.t-v-tab-content</code> class.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <h3 id="text-icon">Text with Icon</h3>
+                    <p class="c600 t-v-margin-medium">A multifunctional block used for system messages, warnings or as a part of a website layout.</p>
+
+                        <section class="t-tabs">
+
+                            <input type="radio" class="tabs-hidden-radio" name="tab-bar-6" id="tab-bar-6-tab-1" checked="checked">
+                            <label for="tab-bar-6-tab-1" class="t-tab-bar-label">Demo</label>
+                            <div class="t-tab-content">
+                                <section class="t-text-with-icon-block">
+                                    <div class="t-text-with-icon-icon">
+                                        <img src="../img/icons8-info.png" alt="">
+                                    </div>
+                                    <div class="t-text-with-icon-text">
+                                        <h4>Info message</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                                    </div>
+                                </section>
+
+                                <section class="t-text-with-icon-block t-success">
+                                    <div class="t-text-with-icon-icon">
+                                        <img src="../img/icons8-ok-50.png" alt="">
+                                    </div>
+                                    <div class="t-text-with-icon-text">
+                                        <h4>Success message</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                                    </div>
+                                </section>
+
+                                <section class="t-text-with-icon-block t-failure">
+                                    <div class="t-text-with-icon-icon">
+                                        <img src="../img/icons8-error-50.png" alt="">
+                                    </div>
+                                    <div class="t-text-with-icon-text">
+                                        <h4>Failure message</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                                    </div>
+                                </section>
+
+                                <section class="t-text-with-icon-block t-warning">
+                                    <div class="t-text-with-icon-icon">
+                                        <img src="../img/icons8-warning-50.png" alt="">
+                                    </div>
+                                    <div class="t-text-with-icon-text">
+                                        <h4>Warning message</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.</p>
+                                    </div>
+                                </section>
+                            </div>
+
+
+                            <input type="radio" class="tabs-hidden-radio" name="tab-bar-6" id="tab-bar-6-tab-2">
+                            <label for="tab-bar-6-tab-2" class="t-tab-bar-label">Source code</label>
+                            <div class="t-tab-content">
+
+<pre><code><span class="code-comments">/* Regular Block */</span>
+&lt;section class="t-text-with-icon-block"&gt;
+    &lt;div class="t-text-with-icon-icon"&gt;
+        &lt;img src="img/icons8-info.png" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-text-with-icon-text"&gt;
+        &lt;h4&gt;Info message&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Success Block */</span>
+&lt;section class="t-text-with-icon-block t-success"&gt;
+    &lt;div class="t-text-with-icon-icon"&gt;
+        &lt;img src="img/icons8-success.png" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-text-with-icon-text"&gt;
+        &lt;h4&gt;Success message&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Failure Block */</span>
+&lt;section class="t-text-with-icon-block t-failure"&gt;
+    &lt;div class="t-text-with-icon-icon"&gt;
+        &lt;img src="img/icons8-failure.png" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-text-with-icon-text"&gt;
+        &lt;h4&gt;Failure message&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Warning Block */</span>
+&lt;section class="t-text-with-icon-block t-warning"&gt;
+    &lt;div class="t-text-with-icon-icon"&gt;
+        &lt;img src="img/icons8-warning.png" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-text-with-icon-text"&gt;
+        &lt;h4&gt;Warning message&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci at beatae eius in maxime modi natus neque non, nostrum numquam perferendis, quo quod ratione rerum similique temporibus! Asperiores, dolore.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                            </div>
+                        </section>
+
+                <p class="c600 t-top-margin-medium">This thing is simple: the block should have a <code>.t-text-with-icon-block</code> class. Adding the <code>.t-success</code>, <code>.t-failure</code> or <code>.t-warning</code> class changes the block's background respectively and text color to white. You can read about those classes below.</p>
+                <p class="c600">The icon goes first and is wrapped in <code>.t-text-with-icon-icon</code> block. Then goes the text, being wrapped in <code>.t-text-with-icon-text</code> class block. Please use <code>&lt;h4&gt;...&lt;/h4&gt;</code> tag for the header to get the color change correct.</p>
+
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h3 id="list-icons">List with icons</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-9" id="tab-bar-9-tab-1" checked="checked">
+                    <label for="tab-bar-9-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <ul class="t-list-with-icons">
+                            <li><img class="img-list-icon" src="../img/icons8-success.png" alt=""> Image Icon</li>
+                            <li><img class="svg-list-icon" src="../img/calendar-svgrepo-com.svg" alt=""> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem consequuntur debitis enim, exercitationem fuga, harum in iusto laboriosam maxime porro provident quae quam rem suscipit, unde vero. Necessitatibus, quis? </span>
+                            </li>
+                            <li><span class="unicode-list-icon">&#10003;</span>Unicode Icon</li>
+                        </ul>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-9" id="tab-bar-9-tab-2">
+                    <label for="tab-bar-9-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;ul class="t-list-with-icons"&gt;
+    &lt;li&gt;&lt;img class="img-list-icon" src="img/icons8-success.png" alt=""&gt; Image Icon&lt;/li&gt;
+    &lt;li&gt;&lt;img class="svg-list-icon" src="img/calendar-svgrepo-com.svg" alt=""&gt; &lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem consequuntur debitis enim, exercitationem fuga, harum in iusto laboriosam maxime porro provident quae quam rem suscipit, unde vero. Necessitatibus, quis? &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;span class="unicode-list-icon"&gt;&#10003;&lt;/span&gt;Unicode Icon&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                    </div>
+
+                </section>
+
+                <div class="c600 t-top-margin-medium">
+                    <p>Simply add a <code>.t-list-with-icons</code> class to your <code>&lt;ul&gt&lt;/ul&gt;</code> list and a corresponding class to your icon according to its type:</p>
+                    <p>
+                    <ul>
+                        <li><code>.img-list-icon</code> class to an image type icon,</li>
+                        <li><code>.svg-list-icon</code> class to an SVG type icon,</li>
+                        <li><code>.unicode-list-icon</code> to the <code>&lt;span&gt;&lt;/span&gt;</code>tag containing your Unicode character.</li>
+                    </ul></p>
+                    <p>Of course, if you're using an icon font, use the necessary classes from its specification rather than this.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <h3 id="breadcrumbs">Breadcrumbs</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-8" id="tab-bar-8-tab-1" checked="checked">
+                    <label for="tab-bar-8-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-inner-section t-v-margin-medium" style="border: 1px solid #cecece; border-bottom: none; background: white;">
+                            <nav class="t-breadcrumbs t-breadcrumbs-slash">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><span>Slash Breadcrumbs</span></li>
+                                </ul>
+                            </nav>
+                            <nav class="t-breadcrumbs t-breadcrumbs-arrow">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><span>Arrow Breadcrumbs</span></li>
+                                </ul>
+                            </nav>
+                            <nav class="t-breadcrumbs t-breadcrumbs-triangle">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><span>Triangle Breadcrumbs</span></li>
+                                </ul>
+                            </nav>
+                            <h3>Breadcrumbs</h3>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa dignissimos distinctio dolore minima molestias mollitia odio sapiente sed...</span></p>
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-8" id="tab-bar-8-tab-2">
+                    <label for="tab-bar-8-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code><span class="code-comments">/* Slash Breadcrumbs */</span>
+&lt;section class="t-breadcrumbs t-breadcrumbs-slash"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;Slash Breadcrumbs&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Arrow Breadcrumbs */</span>
+&lt;section class="t-breadcrumbs t-breadcrumbs-arrow"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;Arrow Breadcrumbs&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Triangular Breadcrumbs */</span>
+&lt;section class="t-breadcrumbs t-breadcrumbs-triangle"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;Triangle Breadcrumbs&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+                    </div>
+
+                </section>
+
+                <div class="c600 t-top-margin-medium">
+
+                    <p>The breadcrumbs are wrapped in a section with two classes: the first is <code>.t-breadcrumbs</code>, the second determines the divider type:</p>
+                    <p>
+                    <ul>
+                        <li><code>.t-breadcrumbs-slash</code> for a slash,</li>
+                        <li><code>.t-breadcrumbs-arrow</code> for an arrow,</li>
+                        <li><code>.t-breadcrumbs-triangle</code> for a triangle.</li>
+                    </ul></p>
+                    <p>All you need next is to put your breadcrumbs links to a list of <code>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code>. Yea, it's that simple.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="tags">Tags</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-10" id="tab-bar-10-tab-1" checked="checked">
+                    <label for="tab-bar-10-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-tags">
+                            <span class="t-tag">Comedy</span>
+                            <span class="t-tag">News & Politics</span>
+                            <span class="t-tag">Gaming</span>
+                            <span class="t-tag">Education</span>
+                            <span class="t-tag">Music</span>
+                            <span class="t-tag">Animals & Pets</span>
+                            <span class="t-tag">People</span>
+                            <span class="t-tag">Vlogs</span>
+                            <span class="t-tag">Science & Technology</span>
+                            <span class="t-tag">Film & Animation</span>
+                            <span class="t-tag">Entertainment</span>
+                            <span class="t-tag">Style & Fashion</span>
+                            <span class="t-tag">Sports</span>
+                            <span class="t-tag">Events</span>
+                            <span class="t-tag">HowTo & DIYs</span>
+                            <span class="t-tag">Travel</span>
+                            <span class="t-tag">Cars</span>
+                            <span class="t-tag">Activism</span>
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-10" id="tab-bar-10-tab-2">
+                    <label for="tab-bar-10-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;section class="t-tags"&gt;
+    &lt;span class="t-tag"&gt;Comedy&lt;/span&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                </section>
+
+                <p class="c600 t-top-margin-medium">Just give your <code>&lt;span&gt;&lt;/span&gt;</code> tag a <code>.t-tag</code>class to turn it into a tag. It's encouraged to wrap tags in <code>.t-tags</code> class wrapper.</p>
+
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="avatars">User Avatars</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-11" id="tab-bar-11-tab-1" checked="checked">
+                    <label for="tab-bar-11-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <h4>Circle</h4>
+                        <section class="t-user-avatar t-user-avatar-circle t-user-avatar-small" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-circle t-user-avatar-medium" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-circle t-user-avatar-large t-top-margin-small" style="background-image:url('../img/user.jpg') "></section>
+
+                        <h4>Rounded</h4>
+
+                        <section class="t-user-avatar t-user-avatar-rounded t-user-avatar-small" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-rounded t-user-avatar-medium" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-rounded t-user-avatar-large t-top-margin-small" style="background-image:url('../img/user.jpg') "></section>
+
+                        <h4>Square</h4>
+                        <section class="t-user-avatar t-user-avatar-square t-user-avatar-small" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-square t-user-avatar-medium" style="background-image:url('../img/user.jpg') "></section>
+                        <section class="t-user-avatar t-user-avatar-square t-user-avatar-large t-top-margin-small" style="background-image:url('../img/user.jpg') "></section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-11" id="tab-bar-11-tab-2">
+                    <label for="tab-bar-11-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code><span class="code-comments">/* Circle avatars */</span>
+&lt;h4&gt;Circle&lt;/h4&gt;
+&lt;section class="t-user-avatar t-user-avatar-circle t-user-avatar-small" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-circle t-user-avatar-medium" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-circle t-user-avatar-large" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+
+<span class="code-comments">/* Rounded avatars */</span>
+&lt;h4&gt;Rounded&lt;/h4&gt;
+&lt;section class="t-user-avatar t-user-avatar-rounded t-user-avatar-small" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-rounded t-user-avatar-medium" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-rounded t-user-avatar-large" style="background-image:url('img/user.jpg') "&gt;&lt;/section&gt;
+
+<span class="code-comments">/* Square avatars (just image, no background) */</span>
+&lt;h4&gt;Square&lt;/h4&gt;
+&lt;section class="t-user-avatar t-user-avatar-square t-user-avatar-small"&gt;
+    &lt;img src = "/image.jpg" alt = "user avatar"&gt;
+&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-square t-user-avatar-medium"&gt;
+    &lt;img src = "/image.jpg" alt = "user avatar"&gt;
+&lt;/section&gt;
+&lt;section class="t-user-avatar t-user-avatar-square t-user-avatar-large"&gt;
+    &lt;img src = "/image.jpg" alt = "user avatar"&gt;
+&lt;/section&gt;
+</code></pre>
+                    </div>
+                </section>
+                <p class="c600 t-top-margin-medium">For an avatar section, we need to add three classes. The first is <code>t-user-avatar</code>. The second class defines the preferred avatar shape, which could be:</p>
+
+                    <p>
+                    <ul class="c600">
+                        <li><code>.t-user-avatar-circle</code> defines a circle shape,</li>
+                        <li><code>.t-user-avatar-rounded</code> defines a rounded-rectangle shape. The <code>border-radius</code> is what's set throughout the site, from the <code>--overall-border-radius</code> option in <code>css/options.css</code></li>
+                        <li><code>.t-user-avatar-squared</code> defines a square shape.</li>
+                    </ul>
+                    </p>
+                <p class="c600">The third class defines the size of an avatar. There are three predefined sizes: small, medium, large, so there are three classes also.</p>
+                <p>
+                <ul class="c600">
+                    <li><code>.t-user-avatar-small</code> defines a small size, 48&times;48 px by default,</li>
+                    <li><code>.t-user-avatar-medium</code> defines a medium size, 72&times;72 px by default,</li>
+                    <li><code>.t-user-avatar-large</code> defines a large size, 96&times;96 px by default.</li>
+                </ul>
+                </p>
+                <p class="c600">You can either place an image inside the section, or use it as a background of the section. Both ways are acceptable.</p>
+            </div>
+        </section>
+
+
+        <div class="t-separator-0"></div>
+
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h2 id="forms">Forms, Inputs, Form Elements</h2>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-13" id="tab-bar-13-tab-1" checked="checked">
+                    <label for="tab-bar-13-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <form action="">
+
+
+
+
+                            <div class="t-flex-box t-v-margin-medium">
+
+                                <div class="t-flex-part t-flex-part-50">
+                                    <label for="index-text">Your name (type=text)</label><input type="text" id="index-text">
+                                    <label for="index-email">E-mail (type=e-mail)</label><input type="email" id="index-email">
+                                    <label for="index-password">Password (type=password)</label><input type="password" id="index-password">
+                                    <label for="index-tel">Phone number (type=phone)</label><input type="tel" id="index-tel">
+                                    <label for="index-date">Date (type=date)</label><input type="date" id="index-date">
+                                    <label for="index-date-local">Datetime local (type=datetime-local)</label><input type="datetime-local" id="index-date-local">
+                                    <label for="index-number">Random number (type=number)</label><input type="number" id="index-number">
+                                    <label for="index-checkbox">Check your mind</label><input type="checkbox" id="index-checkbox">
+                                    <label for="index-radio">Radio</label><input type="radio" id="index-radio">
+                                    <label for="index-select">Select a car</label>
+                                    <select id="index-select" name="cars">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="fiat" selected>Fiat</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                    <label for="index-select-m">Select several cars</label>
+                                    <select id="index-select-m" name="cars" size="4" multiple>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="fiat">Fiat</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                    <label for="index-search">Search query (type=search)</label><input type="search" id="index-search">
+                                    <label for="index-color">Set a color...</label><input type="color" id="index-color">
+                                    <datalist id="index-list">
+                                        <option value="Internet Explorer">
+                                        <option value="Firefox">
+                                        <option value="Chrome">
+                                        <option value="Opera">
+                                        <option value="Safari">
+                                    </datalist>
+                                    <p class="t-bottom-margin-small">
+                                        <label class="t-switch">
+                                            <input type="checkbox">
+                                            <span class="t-switch-slider"></span>
+                                        </label>
+                                    </p>
+                                    <input type="reset"><input type="submit">
+                                </div>
+
+                                <div class="t-flex-part t-flex-part-50">
+                                    <fieldset>
+                                        <legend>Fieldset (fieldset tag)</legend>
+                                        <label for="fname2">First name:</label>
+                                        <input type="text" id="fname2" name="fname2" value="John"><br>
+                                        <label for="lname2">Last name:</label>
+                                        <input type="text" id="lname2" name="lname2" value="Doe"><br><br>
+                                        <input type="submit" value="Submit">
+                                    </fieldset>
+
+                                    <label for="index-textarea">Textarea</label><textarea name="message" rows="10" cols="30" id="index-textarea">The cat was playing in the garden.</textarea>
+                                    <label for="index-file">Select a file</label> <input type="file" id="index-file">
+                                    <label for="index-time">Enter your time (type=time)</label><input type="time" id="index-time">
+                                    <label for="index-week">Current week (type=week)</label><input type="week" id="index-week">
+                                    <label for="index-month">Current month (type=month)</label><input type="month" id="index-month">
+                                    <label for="index-url">Enter your URL (type=url)</label><input type="url" id="index-url">
+                                    <label for="index-button">Click me</label><input type="button" value="Do nothing" id="index-button">
+                                    <label for="index-range">Range</label><input type="range" id="index-range">
+                                    <label for="index-image">Image</label><input type="image" value="Image field" id="index-image">
+                                    <p><button class="t-success">Success button</button></p>
+                                    <p><button class="t-failure">Failure button</button></p>
+                                    <p><button class="t-warning">Warning button</button></p>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-13" id="tab-bar-13-tab-2">
+                    <label for="tab-bar-13-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+                        Just use regular inputs and form elements.
+                    </div>
+
+                </section>
+
+                <p class="c600 t-top-margin-medium">The form inputs comply with <code>--overall-border-radius</code> option set in <code>css/options.css</code>. Labels are to be placed before their respective inputs.</p>
+                <p class="c600">Using a switch component is simple.</p>
+                <p>
+<pre><code>&lt;label class="t-switch"&gt;
+&lt;input type="checkbox"&gt;
+&lt;span class="t-switch-slider"&gt;&lt;/span&gt;
+&lt;/label&gt;</code></pre></p>
+
+            </div>
+        </section>
+
+        <div class="t-separator-0"></div>
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h2 id="text-format">Text formatting and highlighting</h2>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-14" id="tab-bar-14-tab-1" checked="checked">
+                    <label for="tab-bar-14-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <p><span>Lorem ipsum <span class="t-text-underline-fine">dolor sit amet</span>, consectetur adipisicing elit. Architecto <span class="t-text-underline-heavy">cumque deleniti</span>  dolorem eveniet id nemo nostrum odit <span class="t-text-underline-regular">quaerat quos</span>  voluptatem! Debitis et excepturi facilis <span class="t-text-underline-regular">laboriosam</span> nihil. Id nihil reiciendis unde.</span><span>Corporis, <span class="t-text-underline-dotted">cumque fuga</span>, fugiat hic ipsam molestiae officiis quibusdam quo, ratione sequi tempore temporibus voluptas voluptatum. Aliquam deserunt distinctio exercitationem explicabo illo mollitia <span class="t-text-underline-dashed">quam suscipit?</span> Explicabo magni necessitatibus quas voluptatibus?</span><span>Accusamus alias aliquam amet culpa debitis eum, <span class="t-text-highlight-light">exercitationem</span> expedita fuga id inventore ipsum iusto maxime molestiae <span class="t-text-highlight-dark">molestias</span> nobis non nulla quia rem repellat repellendus sequi tempore unde veritatis vero vitae.</span><span>Alias aut eum nemo nobis officia possimus quia quisquam. A animi commodi consectetur dolore ducimus eligendi enim eveniet incidunt modi sit! <span class="t-text-hint">Aspernatur</span> id itaque minima odit omnis quos rem saepe.</span><span><span class="t-text-bordered">Accusantium</span> architecto blanditiis consectetur dignissimos dolorum ducimus est, exercitationem expedita facere hic id incidunt iste maiores mollitia nisi obcaecati officia officiis quisquam, quo ratione reprehenderit sapiente sunt temporibus? Commodi, quod?</span><span>Accusantium amet aspernatur at commodi consequuntur dignissimos eligendi enim esse est, nemo praesentium quasi rerum sequi similique sunt tempore vel velit, voluptatem! Ad assumenda eveniet maiores nemo omnis optio provident!</span></p>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-14" id="tab-bar-14-tab-2">
+                    <label for="tab-bar-14-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>
+&lt;span class="t-text-underline-fine"&gt;fine underline&lt;/span&gt;
+&lt;span class="t-text-underline-heavy"&gt;heavy underline&lt;/span&gt;
+&lt;span class="t-text-underline-regular"&gt;regular underline&lt;/span&gt;
+&lt;span class="t-text-underline-dotted"&gt;dotted underline&lt;/span&gt;
+&lt;span class="t-text-underline-dashed"&gt;dashed underline&lt;/span&gt;
+&lt;span class="t-text-highlight-light"&gt;highlight with a light color&lt;/span&gt;
+&lt;span class="t-text-highlight-dark"&gt;highlight with a dark color&lt;/span&gt;
+&lt;span class="t-text-hint"&gt;A hint: changes a cursor into a question mark&lt;/span&gt;
+&lt;span class="t-text-bordered"&gt;Bordered text&lt;/span&gt;
+</code></pre>
+                    </div>
+
+                </section>
+
+                <p class="c600 t-top-margin-medium">It's pretty much self-explanatory: just add a desired class to your <code>&lt;span&gt;&lt;/span&gt;</code> tag to get a highlight effect.</p>
+                <p class="c600">The list of classes by this time is as follows:</p>
+                <p>
+                <ul class="c600">
+                    <li><code>.t-text-underline-fine</code> <span class="t-text-underline-fine">dolor sit amet</span></li>
+                    <li><code>.t-text-underline-heavy</code> <span class="t-text-underline-heavy">cumque deleniti</span></li>
+                    <li><code>.t-text-underline-regular</code> <span class="t-text-underline-regular">laboriosam</span></li>
+                    <li><code>.t-text-underline-dotted</code> <span class="t-text-underline-dotted">cumque fuga</span></li>
+                    <li><code>.t-text-underline-dashed</code> <span class="t-text-underline-dashed">quam suscipit?</span></li>
+                    <li><code>.t-text-highlight-light</code> <span class="t-text-highlight-light">exercitationem</span></li>
+                    <li><code>.t-text-highlight-dark</code><span class="t-text-highlight-dark">molestias</span></li>
+                    <li><code>.t-text-hint</code> <span class="t-text-hint">Aspernatur</span></li>
+                    <li><code>.t-text-bordered</code> <span class="t-text-bordered">Accusantium</span></li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <div class="t-separator-0"></div>
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h3 id="pre-titles">Pre-titles</h3>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-12" id="tab-bar-12-tab-1" checked="checked">
+                    <label for="tab-bar-12-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="pre-title">
+                            <div class="pre-title-bullet-circle"></div>
+                            <div class="pre-title-content">New gaming experience</div>
+                        </section>
+                        <h2>Text Header</h2>
+
+                        <section class="pre-title">
+                            <div class="pre-title-bullet-square"></div>
+                            <div class="pre-title-content">Our new project</div>
+                        </section>
+                        <h3>Text Header</h3>
+
+
+                        <section class="pre-title">
+                            <div class="pre-title-simple-bg"></div>
+                            <div class="pre-title-content t-color-light t-bg-accent">Sale!</div>
+                        </section>
+                        <h4>Text Header</h4>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-12" id="tab-bar-12-tab-2">
+                    <label for="tab-bar-12-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code><span class="code-comments">/* Circle-bulleted */</span>
+&lt;section class="pre-title"&gt;
+    &lt;div class="pre-title-bullet-circle"&gt;&lt;/div&gt;
+    &lt;div class="pre-title-content"&gt;New gaming experience&lt;/div&gt;
+&lt;/section&gt;
+&lt;h2&gt;Text Header&lt;/h2&gt;
+
+<span class="code-comments">/* Square-bulleted */</span>
+&lt;section class="pre-title"&gt;
+    &lt;div class="pre-title-bullet-square"&gt;&lt;/div&gt;
+    &lt;div class="pre-title-content"&gt;Our new project&lt;/div&gt;
+&lt;/section&gt;
+&lt;h3&gt;Text Header&lt;/h3&gt;
+
+<span class="code-comments">/* Background */</span>
+&lt;section class="pre-title"&gt;
+    &lt;div class="pre-title-simple-bg"&gt;&lt;/div&gt;
+    &lt;div class="pre-title-content t-bg-darker"&gt;Sale!&lt;/div&gt;
+&lt;/section&gt;
+&lt;h4&gt;Text Header&lt;/h4&gt;</code></pre>
+                    </div>
+                </section>
+
+                <p class="c600 t-top-margin-medium">First we need to wrap the pre-title content in a <code>.pre-title</code> block. Inside this block, we place two blocks: a bullet block and a content block. There are three predefined types of bullets:</p>
+                <p>
+                <ul class="c600">
+                    <li><code>.pre-title-bullet-circle</code> renders a circle bullet. You can style its <code>background:</code> property next.</li>
+                    <li><code>.pre-title-bullet-square</code>renders a square bullet. Also stylable.</li>
+                    <li><code>.pre-title-simple-bg</code>isn't technically a bullet, but it gives an option to set a background to the pre-title.</li>
+                </ul>
+                </p>
+                <p class="c600">The content block has a <code>.pre-title-content</code> class. </p>
+            </div>
+        </section>
+
+        <div class="t-separator-0"></div>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="headers-icons">Headers with Icons</h3>
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-15" id="tab-bar-15-tab-1" checked="checked">
+                    <label for="tab-bar-15-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-header-with-icon-h">
+                            <div class="t-header-icon t-header-icon-h1">
+                                <img src="../img/calendar-svgrepo-com.svg">
+                            </div>
+                            <div class="t-header-icon-text">
+                                <h1 style="color:#3498db;">
+                                    Row Header & Icon
+                                </h1>
+                            </div>
+                        </section>
+                        <p class="c600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur deleniti dolore dolorem, minus nesciunt nihil nostrum praesentium quia repellendus reprehenderit sunt? Aliquid asperiores culpa delectus ipsum odio, sapiente veniam!</p>
+
+
+                        <section class="t-header-with-icon-h-r t-top-margin-medium">
+                            <div class="t-header-icon t-header-icon-h2">
+                                <img src="../img/calendar-svgrepo-com.svg">
+                            </div>
+                            <div class="t-header-icon-text">
+                                <h2 style="color:#3498db;">
+                                    Row Header & Icon
+                                </h2>
+                            </div>
+                        </section>
+                        <p class="c600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur deleniti dolore dolorem, minus nesciunt nihil nostrum praesentium quia repellendus reprehenderit sunt? Aliquid asperiores culpa delectus ipsum odio, sapiente veniam!</p>
+
+
+                        <section class="t-header-with-icon-v t-top-margin-medium">
+                            <div class="t-header-icon t-header-icon-h3">
+                                <img src="../img/calendar-svgrepo-com.svg">
+                            </div>
+                            <div class="t-header-icon-text">
+                                <h3 style="color:#3498db;">
+                                    Row Header & Icon
+                                </h3>
+                            </div>
+                        </section>
+                        <p class="c600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur deleniti dolore dolorem, minus nesciunt nihil nostrum praesentium quia repellendus reprehenderit sunt? Aliquid asperiores culpa delectus ipsum odio, sapiente veniam!</p>
+
+
+                        <section class="t-header-with-icon-v-r t-top-margin-medium">
+                            <div class="t-header-icon t-header-icon-h4">
+                                <img src="../img/calendar-svgrepo-com.svg">
+                            </div>
+                            <div class="t-header-icon-text">
+                                <h4 style="color:#3498db;">
+                                    Row Header & Icon
+                                </h4>
+                            </div>
+                        </section>
+                        <p class="c600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur deleniti dolore dolorem, minus nesciunt nihil nostrum praesentium quia repellendus reprehenderit sunt? Aliquid asperiores culpa delectus ipsum odio, sapiente veniam!</p>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-15" id="tab-bar-15-tab-2">
+                    <label for="tab-bar-15-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code><span class="code-comments">/* Horizontal */</span>
+&lt;section class="t-header-with-icon-h t-bottom-margin-small"&gt;
+    &lt;div class="t-header-icon t-header-icon-h1"&gt;
+        &lt;img src="img/calendar-svgrepo-com.svg"&gt;
+    &lt;/div&gt;
+    &lt;div class="t-header-icon-text"&gt;
+    &lt;h1 style="color:#3498db;"&gt;
+        Row Header & Icon
+    &lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Horizontal, reversed */</span>
+&lt;section class="t-header-with-icon-h-r t-bottom-margin-small"&gt;
+    &lt;div class="t-header-icon t-header-icon-h1"&gt;
+        &lt;img src="img/calendar-svgrepo-com.svg"&gt;
+    &lt;/div&gt;
+    &lt;div class="t-header-icon-text"&gt;
+        &lt;h1 style="color:#3498db;"&gt;
+            Row Header & Icon
+        &lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* Vertical */</span>
+&lt;section class="t-header-with-icon-v t-bottom-margin-small"&gt;
+    &lt;div class="t-header-icon t-header-icon-h1"&gt;
+        &lt;img src="img/calendar-svgrepo-com.svg"&gt;
+    &lt;/div&gt;
+    &lt;div class="t-header-icon-text"&gt;
+        &lt;h1 style="color:#3498db;"&gt;
+            Row Header & Icon
+        &lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+<span class="code-comments">/* vertical, reversed */</span>
+&lt;section class="t-header-with-icon-v-r t-bottom-margin-small"&gt;
+    &lt;div class="t-header-icon t-header-icon-h1"&gt;
+        &lt;img src="img/calendar-svgrepo-com.svg"&gt;
+    &lt;/div&gt;
+    &lt;div class="t-header-icon-text"&gt;
+        &lt;h1 style="color:#3498db;"&gt;
+            Row Header & Icon
+        &lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+
+                    </div>
+                </section>
+
+                <div class="c600 t-top-margin-medium">
+                    <p>The header is wrapped in a block having one of the following classes according to its type:</p>
+                    <p>
+                        <ul>
+                            <li><code>.t-header-with-icon-h</code> for a horizontal layout,</li>
+                            <li><code>.t-header-with-icon-h-r</code> for a horizontal reversed layout,</li>
+                            <li><code>.t-header-with-icon-v</code> for a vertical layout,</li>
+                            <li><code>.t-header-with-icon-v-r</code>for a vertical reversed layout.</li>
+                        </ul>
+                    </p>
+                    <p>Inside, we put two <code>div</code>'s, first is for an icon, second for a text. Don't reverse the order, the icon comes first. For an icon, we add <code>.t-header-icon</code> class. We also can add one of six <code>.t-header-icon-h#</code> classes to fit the icon size to the header text. For the header text, we give a <code>.t-header-icon-text</code> class to the parent <code>div</code> element. The header inside should be within <code>&lt;h1&gt;&lt;/h1&gt; — &lt;h6&gt;&lt;/h6&gt;</code>tags.</p>
+                    <p>By default, these headers are centered by <code>justify-content: center;</code> rule. To get a header aligned left or right, add <code>.t-header-align-left</code> or <code>.t-header-align-right</code> class to the wrapping block. </p>
+                </div>
+
+            </div>
+        </section>
+        
+        
+        <div class="t-separator-0"></div>
+        
+        
+
+        <section class="t-section t-bg-light">
+            <div class="t-inner-section">
+                <h2 id="pre-designed" class="has-bottom-border">Pre-designed Components Examples</h2>
+                <h3>Post Blocks</h3>
+                <h4 id="linear">Linear Post Block # 1 — Simple</h4>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-16" id="tab-bar-16-tab-1" checked="checked">
+                    <label for="tab-bar-16-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <article class="t-line-entry t-line-entry-simple has-box-shadow">
+                            <div class="t-line-entry-thumbnail">
+                                <img src="../img/picture-1.jpg" alt="">
+                            </div>
+                            <div class="t-line-entry-content">
+                                <h4 class="t-line-entry-header">
+                                    Linear Block with picture #1
+                                </h4>
+                                <p class="t-line-entry-subtitle">
+                                    by John Doe | September, 11
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                                    eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                                    quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-16" id="tab-bar-16-tab-2">
+                    <label for="tab-bar-16-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;article class="t-line-entry t-line-entry-simple"&gt;
+    &lt;div class="t-line-entry-thumbnail"&gt;
+        &lt;img src="../img/picture-1.jpg" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-line-entry-content"&gt;
+        &lt;h4 class="t-line-entry-header"&gt;
+            Linear Block with picture #1
+        &lt;/h4&gt;
+        &lt;p class="t-line-entry-subtitle"&gt;
+            by John Doe | September, 11
+        &lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <p class="c600 t-top-margin-medium">So, for a first linear post component it goes like that. First, for a linear post block, we add <code>.t-line-entry</code>class to a wrapping element (usually it's an <code>&lt;article&gt;</code> tag). To specify the type, we should add <code>.t-line-entry-simple</code> class.</p>
+                <p class="c600 t-top-margin-medium">Next, we place a thumbnail into a <code>.t-line-entry-thumbnail</code> container, content into <code>.t-line-entry-content</code>, header gets its <code>.t-line-entry-header</code>class.</p>
+
+                <h4>Linear Post Block # 2 — Shifted</h4>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-17" id="tab-bar-17-tab-1" checked="checked">
+                    <label for="tab-bar-17-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <article class="t-line-entry t-line-entry-shifted ">
+                            <div class="t-line-entry-thumbnail">
+                                <img src="../img/picture-1.jpg" alt="">
+                            </div>
+                            <div class="t-line-entry-content has-border">
+                                <h4 class="t-line-entry-header">
+                                    Linear Block with picture #2
+                                </h4>
+                                <p class="t-line-entry-subtitle">
+                                    by John Doe | September, 11
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                                    eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                                    quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-17" id="tab-bar-17-tab-2">
+                    <label for="tab-bar-17-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;article class="t-line-entry t-line-entry-shifted"&gt;
+    &lt;div class="t-line-entry-thumbnail"&gt;
+        &lt;img src="img/picture-1.jpg" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-line-entry-content"&gt;
+        &lt;h4 class="t-line-entry-header"&gt;
+            Linear Block with picture #2
+        &lt;/h4&gt;
+        &lt;p class="t-line-entry-subtitle"&gt;
+            by John Doe | September, 11
+        &lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                    </div>
+                </section>
+
+                <p class="c600 t-top-margin-medium">Same as #1 except that now we add <code>.t-line-entry-shifted</code> as a second class to our article.</p>
+
+                <h4>Linear Post Block #3 — Transparent (No Background)</h4>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-18" id="tab-bar-18-tab-1" checked="checked">
+                    <label for="tab-bar-18-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <article class="t-line-entry t-line-entry-no-bg">
+                            <div class="t-line-entry-thumbnail">
+                                <picture><img src="../img/picture-1.jpg" alt=""></picture>
+                            </div>
+                            <div class="t-line-entry-content ">
+                                <h4 class="t-line-entry-header">
+                                    Linear Block with picture #3
+                                </h4>
+                                <p class="t-line-entry-subtitle">
+                                    by John Doe | September, 11
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+                                    eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+                                    quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-18" id="tab-bar-18-tab-2">
+                    <label for="tab-bar-18-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;article class="t-line-entry t-line-entry-no-bg"&gt;
+    &lt;div class="t-line-entry-thumbnail"&gt;
+        &lt;picture&gt;&lt;img src="../img/picture-1.jpg" alt=""&gt;&lt;/picture&gt;
+    &lt;/div&gt;
+    &lt;div class="t-line-entry-content"&gt;
+        &lt;h4 class="t-line-entry-header"&gt;
+            Linear Block with picture #3
+        &lt;/h4&gt;
+        &lt;p class="t-line-entry-subtitle"&gt;
+            by John Doe | September, 11
+        &lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolorum ducimus
+            eius, excepturi fugit maiores modi natus necessitatibus nobis nostrum obcaecati pariatur
+            quibusdam recusandae reiciendis rerum saepe sed, veritatis voluptates!
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <p class="c600 t-top-margin-medium">Same as both above but how we're using <code>.t-line-entry-no-bg</code> class for an article.</p>
+                <p class="c600">It's possible to use <code>.t-line-entry-subtitle</code> for meta and secondary information. </p>
+
+            </div>
+        </section>
+
+
+
+        <section class="t-section">
+            <div class="t-inner-section">
+                <h3 id="card">Card Post Blocks</h3>
+                <p class="600 t-v-margin-medium">This type of articles is able to serve both as blog/news posts or shop item cards.</p>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-19" id="tab-bar-19-tab-1" checked="checked">
+                    <label for="tab-bar-19-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <article class="t-card-entry t-w-320 has-box-shadow">
+                            <div class="t-card-entry-thumbnail">
+                                <img src="../img/sneakers.jpg" alt="">
+                            </div>
+                            <div class="t-card-entry-content">
+                                <div class="t-card-entry-subtitle">Sneakers</div>
+                                <h4 class="t-card-entry-header">Shop Item Header #1</h4>
+                                <div class="t-card-entry-excerpt t-top-margin-small">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus, est expedita itaque molestias nam provident quia recusandae sit ullam ut veniam vero vitae. At iste mollitia rem ullam voluptatem!</p>
+                                </div>
+                                <div class="t-card-entry-parameters">
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Made in:</span><span class="t-card-entry-parameter-value">China</span></div>
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Size:</span><span class="t-card-entry-parameter-value">45</span></div>
+                                    <div class="t-card-entry-parameter"><span class="t-card-entry-parameter-name">Color:</span><span class="t-card-entry-parameter-value">sarcoline</span></div>
+                                </div>
+
+                                <div class="t-flex-box">
+                                    <div class="t-flex-part t-flex-part-50">
+                                        <div class="t-card-entry-price">$51.45</div>
+                                    </div>
+                                    <div class="t-flex-part t-flex-part-50">
+                                        <div class="t-card-entry-add-to-cart"><button class="t-success">Add to cart</button></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-19" id="tab-bar-19-tab-2">
+                    <label for="tab-bar-19-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;article class="t-card-entry t-w-320"&gt;
+    &lt;div class="t-card-entry-thumbnail"&gt;
+        &lt;img src="img/hero.webp" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="t-card-entry-content"&gt;
+        &lt;div class="t-card-entry-subtitle"&gt;Sneakers&lt;/div&gt;
+        &lt;h4 class="t-card-entry-header"&gt;Shop Item Header #1&lt;/h4&gt;
+        &lt;div class="t-card-entry-excerpt t-top-margin-small"&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus, est expedita itaque molestias nam provident quia recusandae sit ullam ut veniam vero vitae. At iste mollitia rem ullam voluptatem!&lt;/p&gt;
+        &lt;/div&gt;
+        <span class="code-comments">/* parameters */</span>
+        &lt;div class="t-card-entry-parameters"&gt;
+            &lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Made in:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;China&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Size:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;45&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Color:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;sarcoline&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="t-flex-box"&gt;
+            &lt;div class="t-flex-part t-flex-part-50"&gt;
+                &lt;div class="t-card-entry-price"&gt;$51.45&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="t-flex-part t-flex-part-50"&gt;
+                &lt;div class="t-card-entry-add-to-cart"&gt;&lt;button class="t-success"&gt;Add to cart&lt;/button&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <div class="c600 t-v-margin-medium">
+                    <p><code>.t-card-entry</code> is the main article class. First, we can use width limiters for the card entry, which are those:</p>
+                    <ul>
+                        <li><code>.t-w-320</code> sets the block's maximum width to 320px.</li>
+                        <li><code>.t-w-500</code> sets the block's maximum width to 500px.</li>
+                        <li><code>.t-w-25</code> sets the block's width to 25%.</li>
+                        <li><code>.t-w-33</code> sets the block's width to 33.333%.</li>
+                        <li><code>.t-w-50</code> sets the block's width to 50%.</li>
+                    </ul>
+                    <p>Another, more versatile option, is to place a card post component into a grid cell inside a grid box or into a flex box. You probably might not want to limit its width then so don't add the width limiter. It'll be set to <code>width: 100%;</code>.</p>
+                    <p>Thumbnails are wrapped in <code>.t-card-entry-thumbnail</code> wrapper. Another wrappers are self-explanatory for their respective content. A parameter section is available and can be conveniently used in a shop item card to list the item's features.</p></div>
+
+<pre><code>&lt;div class="t-card-entry-parameters"&gt;
+&lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Made in:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;China&lt;/span&gt;&lt;/div&gt;
+&lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Size:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;45&lt;/span&gt;&lt;/div&gt;
+&lt;div class="t-card-entry-parameter"&gt;&lt;span class="t-card-entry-parameter-name"&gt;Color:&lt;/span&gt;&lt;span class="t-card-entry-parameter-value"&gt;sarcoline&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="c600 t-v-margin-medium">
+                    <p>Use <code>.t-card-entry-price</code> to highlight a price, and <code>.t-card-entry-add-to-cart</code> for a special cart button. <code>.t-card-entry-subtitle</code> is at your disposal for meta & supplementary information.</p>
+                    <p>Use <code>&lt;section class="t-card-entry t-card-entry-full-bg t-padding-small"&gt;</code> if you're planning to add a full-width background to a card post block.</p>
+                    <p>Actually, you can even use the card post block for creating full-width announces, hero banners and CTA's, though there are more precise layouts for these purposes (listed below). Let's see a simple example.</p></div>
+
+                    <section class="t-tabs t-top-margin-small">
+
+                        <input type="radio" class="tabs-hidden-radio" name="tab-bar-20" id="tab-bar-20-tab-1" checked="checked">
+                        <label for="tab-bar-20-tab-1" class="t-tab-bar-label">Demo</label>
+                        <div class="t-tab-content">
+                            <section class="t-card-entry t-card-entry-full-bg t-padding" style="background-image: url('../img/scratch-bg.webp')">
+                                <div class="t-card-entry-content">
+                                    <div class="pre-title">
+                                        <div class="pre-title-simple-bg"></div>
+                                        <div class="pre-title-content t-bg-accent t-color-light">Starting in September</div>
+                                    </div>
+                                    <h3 class="t-color-light">Programming in Scratch</h3>
+                                    <p class="t-color-light">Advanced-level course for our students</p>
+                                    <p class="t-color-light">Card-type full-width announce</p>
+                                    <button class="t-top-margin-medium">Learn more</button>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <input type="radio" class="tabs-hidden-radio" name="tab-bar-20" id="tab-bar-20-tab-2">
+                        <label for="tab-bar-20-tab-2" class="t-tab-bar-label">Source code</label>
+                        <div class="t-tab-content">
+<pre><code>&lt;section class="t-card-entry t-card-entry-full-bg t-padding" style="background-image: url('../img/scratch-bg.webp')"&gt;
+    &lt;div class="t-card-entry-content"&gt;
+        &lt;div class="pre-title"&gt;
+            &lt;div class="pre-title-simple-bg"&gt;&lt;/div&gt;
+            &lt;div class="pre-title-content t-bg-accent t-color-main"&gt;Starting in September&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h3 class="t-color-light"&gt;Programming in Scratch&lt;/h3&gt;
+        &lt;p class="t-color-light"&gt;Advanced-level course for our students&lt;/p&gt;
+        &lt;p class="t-color-light"&gt;Card-type full-width announce&lt;/p&gt;
+        &lt;button class="t-top-margin-medium"&gt;Learn more&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+                        </div>
+
+                    </section>
+                
+            </div>
+        </section>
+
+        
+        <div class="t-separator-0"></div>
+        
+
+        <section class="t-section t-bg-lighter">
+            <div class="t-inner-section">
+                <h3 id="hero">Hero Banners, Fullwidth Blocks</h3>
+
+                <p class="c600 t-v-margin-medium">Combining <code>.t-banner</code> wrapping section class with a Flex-box or Grid layout inside is a simple technique to create fullwidth banners.</p>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-21" id="tab-bar-21-tab-1" checked="checked">
+                    <label for="tab-bar-21-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-banner t-padding" style="background-color: #111111; ">
+                            <div class="t-flex-box">
+                                <div class="t-flex-part t-flex-part-66">
+                                    <h1 class="t-color-light">Delicious Ice Cream</h1>
+                                    <h4 class="t-color-light"><span>Hero Block Example #1</span></h4>
+
+                                    <p class="t-color-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci doloremque, earum error est ex expedita facilis illo itaque minus, provident sequi voluptatibus! Maxime nihil nisi porro reprehenderit sunt.
+                                    </p>
+                                    <button class="t-top-margin-small">Get it</button>
+                                </div>
+                                <div class="t-flex-part t-flex-part-33">
+                                    <img class="t-banner-main-picture" src="../img/icecream.png" alt="">
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-21" id="tab-bar-21-tab-2">
+                    <label for="tab-bar-21-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;section class="t-banner t-padding" style="background-color: #111111; "&gt;
+    &lt;div class="t-flex-box"&gt;
+        &lt;div class="t-flex-part t-flex-part-66"&gt;
+            &lt;h1 class="t-color-light"&gt;Delicious Ice Cream&lt;/h1&gt;
+            &lt;h4 class="t-color-light"&gt;&lt;span&gt;Hero Block Example #1&lt;/span&gt;&lt;/h4&gt;
+
+            &lt;p class="t-color-light"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci doloremque, earum error est ex expedita facilis illo itaque minus, provident sequi voluptatibus! Maxime nihil nisi porro reprehenderit sunt.
+            &lt;/p&gt;
+            &lt;button class="t-top-margin-small"&gt;Get it&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="t-flex-part t-flex-part-33"&gt;
+            &lt;img class="t-banner-main-picture" src="img/icecream.png" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <div class="t-interval-large"></div>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-22" id="tab-bar-22-tab-1" checked="checked">
+                    <label for="tab-bar-22-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-banner" style=" background-image: linear-gradient(to right bottom, #e3e3e3, #e5e5e5, #ececec, #f3f3f3);">
+
+                            <div class="t-flex-box" style="align-items: center; height: 100%">
+
+                                <div class="t-flex-part t-flex-part-50">
+                                    <img src="../img/man.png" alt="" class="t-banner-main-picture">
+                                </div>
+
+                                <div class="t-flex-part t-flex-part-50 t-padding">
+                                    <p style="font-size: 34pt; line-height: 1.2em;">We're Hiring Professionals</p>
+                                    <p><span><b>Hero Block Example #2</b></span></p>
+
+                                    <p><ul style="list-style: none">
+                                    <li>Graphic Designer</li>
+                                    <li>PHP Developer</li>
+                                    <li>CMS Wordpress Developer</li>
+                                </ul>
+                                    </p>
+                                    <button class="t-success">Learn more</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-22" id="tab-bar-22-tab-2">
+                    <label for="tab-bar-22-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+<pre><code>&lt;section class="t-banner" style=" background-image: linear-gradient(to right bottom, #e3e3e3, #e5e5e5, #ececec, #f3f3f3);"&gt;
+    &lt;div class="t-flex-box" style="align-items: center; height: 100%"&gt;
+
+        &lt;div class="t-flex-part t-flex-part-50"&gt;
+            &lt;img src="img/man.png" alt="" class="t-banner-main-picture"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="t-flex-part t-flex-part-50 t-padding"&gt;
+            &lt;p style="font-size: 34pt; line-height: 1.2em;"&gt;We're Hiring Professionals&lt;/p&gt;
+            &lt;p&gt;&lt;span&gt;&lt;b&gt;Hero Block Example #2&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+
+            &lt;p&gt;&lt;ul style="list-style: none"&gt;
+            &lt;li&gt;Graphic Designer&lt;/li&gt;
+            &lt;li&gt;PHP Developer&lt;/li&gt;
+            &lt;li&gt;CMS Wordpress Developer&lt;/li&gt;
+        &lt;/ul&gt;
+            &lt;/p&gt;
+            &lt;button class="t-success"&gt;Learn more&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <p id="tib" class="c600 t-v-margin-medium">It is also possible to use TIBs (the image banners or trade image banners) to easily create a banner with a full-height image (or a video) aside.</p>
+
+                <section class="t-tabs">
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-23" id="tab-bar-23-tab-1" checked="checked">
+                    <label for="tab-bar-23-tab-1" class="t-tab-bar-label">Demo</label>
+                    <div class="t-tab-content">
+                        <section class="t-tib">
+
+                            <div class="t-grid-box t-grid-box-33-66">
+                                <div class="t-grid-part t-tib-left t-no-padding">
+                                    <img class="t-tib-main-image" src="../img/vase-with-tulips-table.jpg" alt="">
+                                </div>
+                                <div class="t-grid-part t-tib-right">
+                                    <div class="t-banner-subtitle">studio design</div>
+                                    <h4>Lora vase</h4>
+                                    <div class="t-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis corporis dicta, dignissimos dolor doloribus eaque expedita explicabo fugiat, in incidunt libero magni odit quo quos similique temporibus totam, ut.</div>
+                                    <div class="t-rating">★★★★★</div>
+                                    <button class="t-top-margin-medium">More info</button>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+
+                    <input type="radio" class="tabs-hidden-radio" name="tab-bar-23" id="tab-bar-23-tab-2">
+                    <label for="tab-bar-23-tab-2" class="t-tab-bar-label">Source code</label>
+                    <div class="t-tab-content">
+ <pre><code>&lt;section class="t-tib"&gt;
+    &lt;div class="t-grid-box t-grid-box-33-66"&gt;
+        &lt;div class="t-grid-part t-tib-left t-no-padding"&gt;
+            &lt;img class="t-tib-main-image" src="img/vase-with-tulips-table.jpg" alt=""&gt;
+        &lt;/div&gt;
+        &lt;div class="t-grid-part t-bg-lighter t-tib-right"&gt;
+            &lt;div class="t-banner-subtitle"&gt;studio design&lt;/div&gt;
+            &lt;h4&gt;Lora vase&lt;/h4&gt;
+            &lt;div class="t-banner-description"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis corporis dicta, dignissimos dolor doloribus eaque expedita explicabo fugiat, in incidunt libero magni odit quo quos similique temporibus totam, ut.&lt;/div&gt;
+            &lt;div class="t-rating"&gt;★★★★★&lt;/div&gt;
+            &lt;button class="t-top-margin-medium"&gt;More info&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+
+                </section>
+
+                <p class="c600 t-top-margin-medium"><code>.t-tib</code> section should contain a <code>.t-grid-box .t-grid-box-33-66</code>, <code>.t-grid-box .t-grid-box-66-33</code> or <code>.t-grid-box .t-grid-box-50</code> grid layout. Also don't forget to add <code>.t-tib-left</code> and <code>.t-tib-right</code> classes respectively, so that it provides correct work.</p>
+                
+                
+                
+            </div>
+        </section>
+
+
+    </section><!-- /main-container -->
+
+    <footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light">
+        <div id="t-main-footer-container">
+
+            <section class="t-main-footer-top" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">4-Column Type Footer — Top Footer Section</p>
+            </section>
+            <section class="t-main-footer-middle">
+                <section class="t-main-footer-left">
+                    <h5>Address</h5>
+                    <p>30/20, Verkhy street,
+                        Moscow, Russia</p>
+                    <p>7 (800) 555–35–35</p>
+                    <p>noreply@reply.io</p>
+                    <p>8:00 AM – 8:00 PM</p>
+                </section>
+                <section class="t-main-footer-center1">
+                    <h5>Tags</h5>
+                    <p>
+                        <span class="t-tag">Comedy</span>
+                        <span class="t-tag">News & Politics</span>
+                        <span class="t-tag">Gaming</span>
+                        <span class="t-tag">Education</span>
+                        <span class="t-tag">Music</span>
+                        <span class="t-tag">Animals & Pets</span>
+                        <span class="t-tag">People</span>
+                        <span class="t-tag">Vlogs</span>
+                        <span class="t-tag">Science & Technology</span>
+                        <span class="t-tag">Film & Animation</span>
+                        <span class="t-tag">Entertainment</span>
+                        <span class="t-tag">Style & Fashion</span>
+                        <span class="t-tag">Sports</span>
+                        <span class="t-tag">Events</span>
+                        <span class="t-tag">HowTo & DIYs</span>
+                        <span class="t-tag">Travel</span>
+                        <span class="t-tag">Cars</span>
+                        <span class="t-tag">Activism</span>
+                    </p>
+                </section>
+                <section class="t-main-footer-center2">
+                    <h5>Categories</h5>
+                    <p>
+                    <ul class="t-top-margin-small t-footer-links">
+                        <li role="menuitem"><a href="#">Software Development</a></li>
+                        <li role="menuitem"><a href="#">Web Development</a></li>
+                        <li role="menuitem"><a href="#">Site maintainance</a></li>
+                        <li role="menuitem"><a href="#">SEO</a></li>
+                        <li role="menuitem"><a href="#">Mobile development</a></li>
+                        <li role="menuitem"><a href="#">UI/UX</a></li>
+                    </ul>
+                    </p>
+                </section>
+                <section class="t-main-footer-right">
+                    <h5>Information</h5>
+                    <p>
+                    <ul class="t-footer-links">
+                        <li role="menuitem"><a href="#">Home</a></li>
+                        <li role="menuitem"><a href="#">About</a></li>
+                        <li role="menuitem"><a href="#">Contact Information</a></li>
+                        <li role="menuitem"><a href="#">Terms of Use<br>& Legal Information</a></li>
+                        <li role="menuitem"><a href="#">Message Us</a></li>
+                        <li role="menuitem"><a href="#">Leave a Feedback</a></li>
+                    </ul>
+                    </p>
+                </section>
+            </section>
+            <section class="t-main-footer-bottom" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">Bottom Footer Section</p>
+            </section>
+
+        </div>
+    </footer>
+
+
+</section>
+
+</body>
+</html>

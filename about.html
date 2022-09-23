@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/t-options.css">
+    <link rel="stylesheet" href="css/t-block-style.css">
+    <link rel="stylesheet" href="css/t-block-style-mobile.css">
+    <link rel="stylesheet" href="css/t-header.css">
+    <link rel="stylesheet" href="css/t-footer.css">
+    <style>
+        code {
+            background: #eeeeee;
+            font-family: monospace;
+            text-decoration: none;
+            border-bottom: 1px solid #aaaaaa;
+            padding: 0 3px;
+            margin: 0 3px;
+        }
+        pre {
+            background: var(--theme-dark-background);
+            color: white;
+            padding: var(--small-offset);
+            overflow-x: scroll;
+        }
+
+        pre > code {
+            background: none;
+            border-bottom: none;
+        }
+
+        .code-comments {
+            font-style: italic;
+            color: #999999;
+        }
+
+        #section-grid .t-grid-part {
+            background: #666;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<section id="t-site-wrapper">
+
+    <header id="t-main-header" class="t-main-header t-bg-darker is-sticky">
+        <div id="t-main-header-container">
+
+
+            <input type="checkbox" class="toggleSideMenu" id="toggleSideMenu" autocomplete="off">
+            <label for="toggleSideMenu" class="hamburger-icon">
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-1"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-horizontal"></div>
+                <div class="hamburger-menu-line hamburger-menu-line-diagonal-2"></div>
+            </label>
+
+
+            <section id="t-main-header-logo">
+                <a href="index.html"><img src="img/logo-small.png" alt=""></a>
+            </section>
+
+
+
+
+            <section id="t-main-header-menu-container">
+
+                <section id="before-side-menu">
+                    <span>Content before main menu</span>
+                </section>
+
+                <nav id="t-main-header-menu">
+                    <ul>
+                        <li><a href="index.html">Blocks&Elements</a></li>
+                        <li><a href="help/documentation.html">Documentation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <section id="after-side-menu">
+                    <span>Content after main menu</span>
+                    <section class="social-buttons">
+                        <i class="icon-linkedin"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></i><i
+                            class="icon-facebook-squared"><img class="icon-header"
+                                                               src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></i><i
+                            class="icon-vkontakte"><img class="icon-header"
+                                                        src="https://img.icons8.com/ios-glyphs/30/ffffff/vkontakte.png"/></i><i
+                            class="icon-twitter"><img class="icon-header"
+                                                      src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></i>
+                    </section>
+                </section>
+
+            </section>
+
+
+
+
+            <div id="t-main-header-right">
+                <button class="t-success"><span>Button</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="t-main-container">
+
+        <section class="t-section t-bg-darker t-color-light">
+            <div class="t-inner-section">
+                <h1>About </h1>
+            </div>
+        </section>
+
+        <section class="t-section">
+            <div class="t-inner-section">
+
+                <h2>About Tuicast</h2>
+                <p class="t-top-margin-medium">Tuicast is a one-man-driven HTML+CSS framework for creating simple websites. It comes as is, with no warranty.</p>
+                <p>Developed by taviskaron (Konstantin Kononenko), 2022</p>
+
+            </div>
+        </section>
+
+
+    </section>
+
+    <footer id="t-main-footer" class="t-main-footer t-main-footer-4-columns t-bg-darker t-color-light">
+        <div id="t-main-footer-container">
+
+            <section class="t-main-footer-top" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">4-Column Type Footer — Top Footer Section</p>
+            </section>
+            <section class="t-main-footer-middle">
+                <section class="t-main-footer-left">
+                    <h5>Address</h5>
+                    <p>30/20, Verkhy street,
+                        Moscow, Russia</p>
+                    <p>7 (800) 555–35–35</p>
+                    <p>noreply@reply.io</p>
+                    <p>8:00 AM – 8:00 PM</p>
+                </section>
+                <section class="t-main-footer-center1">
+                    <h5>Tags</h5>
+                    <p>
+                        <span class="t-tag">Comedy</span>
+                        <span class="t-tag">News & Politics</span>
+                        <span class="t-tag">Gaming</span>
+                        <span class="t-tag">Education</span>
+                        <span class="t-tag">Music</span>
+                        <span class="t-tag">Animals & Pets</span>
+                        <span class="t-tag">People</span>
+                        <span class="t-tag">Vlogs</span>
+                        <span class="t-tag">Science & Technology</span>
+                        <span class="t-tag">Film & Animation</span>
+                        <span class="t-tag">Entertainment</span>
+                        <span class="t-tag">Style & Fashion</span>
+                        <span class="t-tag">Sports</span>
+                        <span class="t-tag">Events</span>
+                        <span class="t-tag">HowTo & DIYs</span>
+                        <span class="t-tag">Travel</span>
+                        <span class="t-tag">Cars</span>
+                        <span class="t-tag">Activism</span>
+                    </p>
+                </section>
+                <section class="t-main-footer-center2">
+                    <h5>Categories</h5>
+                    <p>
+                    <ul class="t-top-margin-small t-footer-links">
+                        <li role="menuitem"><a href="#">Software Development</a></li>
+                        <li role="menuitem"><a href="#">Web Development</a></li>
+                        <li role="menuitem"><a href="#">Site maintainance</a></li>
+                        <li role="menuitem"><a href="#">SEO</a></li>
+                        <li role="menuitem"><a href="#">Mobile development</a></li>
+                        <li role="menuitem"><a href="#">UI/UX</a></li>
+                    </ul>
+                    </p>
+                </section>
+                <section class="t-main-footer-right">
+                    <h5>Information</h5>
+                    <p>
+                    <ul class="t-footer-links">
+                        <li role="menuitem"><a href="#">Home</a></li>
+                        <li role="menuitem"><a href="#">About</a></li>
+                        <li role="menuitem"><a href="#">Contact Information</a></li>
+                        <li role="menuitem"><a href="#">Terms of Use<br>& Legal Information</a></li>
+                        <li role="menuitem"><a href="#">Message Us</a></li>
+                        <li role="menuitem"><a href="#">Leave a Feedback</a></li>
+                    </ul>
+                    </p>
+                </section>
+            </section>
+            <section class="t-main-footer-bottom" style="border: 1px solid gray;">
+                <p class="c600 text-centered t-bottom-margin-small">Bottom Footer Section</p>
+            </section>
+
+        </div>
+    </footer>
+
+</section>
+
+</body>
+</html>
